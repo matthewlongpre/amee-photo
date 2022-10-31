@@ -2,6 +2,7 @@ import { BookIcon } from '@sanity/icons'
 import { defineType } from 'sanity'
 
 import authorType from './author'
+import narrativePublish from './narrativePublish'
 
 /**
  * This file is the schema definition for a post.
@@ -41,7 +42,7 @@ export default defineType({
       name: 'content',
       title: 'Content',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{ type: 'block' }, { type: narrativePublish.name }],
     },
     {
       name: 'excerpt',

@@ -7,14 +7,21 @@
  * https://portabletext.org/
  *
  */
-import { PortableText } from '@portabletext/react'
+import { PortableText, PortableTextReactComponents } from '@portabletext/react'
 
+import NarrativePublish from './narrative-publish'
 import portableTextStyles from './portable-text-styles.module.css'
+
+const portableTextComponents = {
+  types: {
+    narrativePublish: ({ value }) => <NarrativePublish postId={value.postId} />,
+  },
+}
 
 export default function PostBody({ content }) {
   return (
     <div className={`mx-auto max-w-2xl ${portableTextStyles.portableText}`}>
-      <PortableText value={content} />
+      <PortableText value={content} components={portableTextComponents} />
     </div>
   )
 }
