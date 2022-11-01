@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import Router from 'next/router'
-import Script from 'next/script'
 import { useEffect } from 'react'
 
 interface NarrativePublishProps {
@@ -14,6 +12,7 @@ const styles = `
     opacity: 0;
     animation: nara 0s ease-in 2s forwards;
   }
+  
   @keyframes nara {
     to {
       opacity: 1;
