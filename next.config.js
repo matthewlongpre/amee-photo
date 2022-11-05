@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  experimental: { appDir: true },
   images: {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
@@ -8,11 +9,11 @@ module.exports = {
   },
   typescript: {
     // Set this to false if you want production builds to abort if there's type errors
-    // ignoreBuildErrors: process.env.VERCEL_ENV === 'production',
+    // ignoreBuildErrors:,
   },
   eslint: {
     /// Set this to false if you want production builds to abort if there's lint errors
-    // ignoreDuringBuilds: process.env.VERCEL_ENV === 'production',
+    // ignoreDuringBuilds:,
   },
   async redirects() {
     return [

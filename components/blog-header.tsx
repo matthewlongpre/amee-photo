@@ -1,5 +1,3 @@
-import { CMS_NAME, CMS_URL } from '../lib/constants'
-
 export default function BlogHeader({ title }) {
   return (
     <section className="mt-16 mb-10 flex flex-col items-center md:mb-16 md:flex-row md:justify-between">

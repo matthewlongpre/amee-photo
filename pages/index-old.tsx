@@ -47,7 +47,6 @@ export default function Index({
 }
 
 export async function getStaticProps({ preview = false }) {
-  /* check if the project id has been defined by fetching the vercel envs */
   if (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
     const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery))
     const blogSettings = await getClient(preview).fetch(settingsQuery)

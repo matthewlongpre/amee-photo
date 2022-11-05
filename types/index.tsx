@@ -12,3 +12,7 @@ export interface PostProps {
   slug?: string
   content?: any
 }
+
+export interface EmptyProps {
+  children: React.ReactNode
+}
