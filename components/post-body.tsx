@@ -7,16 +7,18 @@
  * https://portabletext.org/
  *
  */
-import { PortableText, PortableTextReactComponents } from '@portabletext/react'
+import { PortableText } from '@portabletext/react'
 
 import NarrativePublish from './narrative-publish'
+import Pictime from './pictime'
 import portableTextStyles from './portable-text-styles.module.css'
 
 const portableTextComponents = {
   types: {
     narrativePublish: ({ value }) => <NarrativePublish postId={value.postId} />,
+    pictime: ({ value }) => <Pictime snippet={value.snippet} />,
   },
-}
+} as const
 
 export default function PostBody({ content }) {
   return (
