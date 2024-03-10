@@ -14,16 +14,36 @@ const postFields = groq`
 
 export const settingsQuery = groq`*[_type == "settings"][0]{title}`
 
-export const homeQuery = groq`
+export const featuredPostsQuery = groq`
 *[_type == "post" && isFeatured] | order(date desc, _updatedAt desc) {
   ${postFields}
   isFeatured
 }`
 
-export const indexQuery = groq`
+export const storiesQuery = groq`
 *[_type == "post"] | order(date desc, _updatedAt desc) {
   ${postFields}
 }`
+
+export const homePageQuery = groq`
+*[_type == "homePage"][0]{
+  title,
+  "sections": sections[]{
+    _type,
+    ...,
+    _type == "reference" => @->{
+      ...,
+    },
+    _type == "testimonialsList" => {
+      ...,
+      "testimonials": testimonials[]->{
+      ...
+      }
+    }
+  }
+}
+
+`
 
 export const postQuery = groq`
 {

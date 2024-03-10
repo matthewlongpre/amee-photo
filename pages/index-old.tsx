@@ -5,7 +5,7 @@ import Container from '../components/container'
 import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
 import MoreStories from '../components/more-stories'
-import { indexQuery, settingsQuery } from '../lib/queries'
+import { settingsQuery, storiesQuery } from '../lib/queries'
 import { usePreviewSubscription } from '../lib/sanity'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 
@@ -14,7 +14,7 @@ export default function Index({
   preview,
   blogSettings,
 }) {
-  const { data: allPosts } = usePreviewSubscription(indexQuery, {
+  const { data: allPosts } = usePreviewSubscription(storiesQuery, {
     initialData: initialAllPosts,
     enabled: preview,
   })
@@ -48,7 +48,7 @@ export default function Index({
 
 export async function getStaticProps({ preview = false }) {
   if (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
-    const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery))
+    const allPosts = overlayDrafts(await getClient(preview).fetch(storiesQuery))
     const blogSettings = await getClient(preview).fetch(settingsQuery)
 
     return {

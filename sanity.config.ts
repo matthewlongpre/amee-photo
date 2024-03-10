@@ -8,24 +8,64 @@ import { deskTool } from 'sanity/desk'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
 
 import { PostsPreview } from './components/Posts/PostsPreview'
+import aboutSection from './schemas/aboutSection'
 import authorType from './schemas/author'
+import buttonType from './schemas/button'
+import component from './schemas/component'
+import headingType from './schemas/heading'
+import homePageType from './schemas/homePage'
 import narrativePublish from './schemas/narrativePublish'
+import pageType from './schemas/page'
 import pictime from './schemas/pictime'
 import postType from './schemas/post'
 import settingsType from './schemas/settings'
+import testimonial from './schemas/testimonial'
+import testimonialsList from './schemas/testimonialsList'
 
 const basePath = '/studio'
 
+const projectId = () => {
+  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+    throw new Error(
+      'The `NEXT_PUBLIC_SANITY_PROJECT_ID` environment variable is not set'
+    )
+  }
+  return process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+}
+
+const dataset = () => {
+  if (!process.env.NEXT_PUBLIC_SANITY_DATASET) {
+    throw new Error(
+      'The `NEXT_PUBLIC_SANITY_DATASET` environment variable is not set'
+    )
+  }
+  return process.env.NEXT_PUBLIC_SANITY_DATASET
+}
+
 export default createConfig({
   basePath,
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  projectId: projectId(),
+  dataset: dataset(),
   title:
     process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
     'Next.js Blog with Sanity.io',
   schema: {
     // If you want more content types, you can add them to this array
-    types: [settingsType, postType, authorType, narrativePublish, pictime],
+    types: [
+      aboutSection,
+      authorType,
+      buttonType,
+      headingType,
+      homePageType,
+      narrativePublish,
+      pageType,
+      pictime,
+      postType,
+      settingsType,
+      component,
+      testimonial,
+      testimonialsList,
+    ],
   },
   plugins: [
     deskTool({
@@ -33,7 +73,7 @@ export default createConfig({
         // The `Settings` root list item
         const settingsListItem = // A singleton not using `documentListItem`, eg no built-in preview
           S.listItem()
-            .title(settingsType.title)
+            .title(settingsType.title ?? 'Settings')
             .icon(settingsType.icon)
             .child(
               S.editor()
@@ -42,14 +82,30 @@ export default createConfig({
                 .documentId(settingsType.name)
             )
 
+        const homePageItem = S.listItem()
+          .title('Home Page')
+          .icon(homePageType.icon)
+          .child(
+            S.editor()
+              .schemaType(homePageType.name)
+              .documentId(homePageType.name)
+          )
+
         // The default root list items (except custom ones)
         const defaultListItems = S.documentTypeListItems().filter(
-          (listItem) => listItem.getId() !== settingsType.name
+          (listItem) =>
+            listItem.getId() !== settingsType.name &&
+            listItem.getId() !== homePageType.name
         )
 
         return S.list()
           .title('Content')
-          .items([settingsListItem, S.divider(), ...defaultListItems])
+          .items([
+            settingsListItem,
+            S.divider(),
+            homePageItem,
+            ...defaultListItems,
+          ])
       },
 
       // `defaultDocumentNode is responsible for adding a “Preview” tab to the document pane
