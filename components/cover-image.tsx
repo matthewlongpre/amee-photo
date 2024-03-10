@@ -13,6 +13,7 @@ interface CoverImageProps {
 
 export default function CoverImage(props: CoverImageProps) {
   const { title, slug, image: source, priority } = props
+
   const image = source?.asset?._ref ? (
     <div
       className={cn('shadow-small', {

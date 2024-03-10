@@ -30,6 +30,18 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'subTitle',
+      title: 'Subtitle',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'seoTitle',
+      title: 'SEO Title',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -38,6 +50,11 @@ export default defineType({
         maxLength: 96,
       },
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'isFeatured',
+      title: 'Featured',
+      type: 'boolean',
     },
     {
       name: 'content',
@@ -77,6 +94,7 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
+      subTitle: 'subTitle',
       author: 'author.name',
       media: 'coverImage',
     },

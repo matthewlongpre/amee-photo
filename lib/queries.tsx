@@ -7,11 +7,18 @@ const postFields = groq`
   date,
   excerpt,
   coverImage,
+  subTitle,
   "slug": slug.current,
   "author": author->{name, picture},
 `
 
 export const settingsQuery = groq`*[_type == "settings"][0]{title}`
+
+export const homeQuery = groq`
+*[_type == "post" && isFeatured] | order(date desc, _updatedAt desc) {
+  ${postFields}
+  isFeatured
+}`
 
 export const indexQuery = groq`
 *[_type == "post"] | order(date desc, _updatedAt desc) {

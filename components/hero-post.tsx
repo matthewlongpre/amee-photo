@@ -1,12 +1,11 @@
 import Link from 'next/link'
 
 import { PostProps } from '../types'
-import Avatar from './avatar'
 import CoverImage from './cover-image'
 import Date from './date'
 
 export default function HeroPost(props: PostProps) {
-  const { title, coverImage, date, excerpt, author, slug } = props
+  const { title, coverImage, date, excerpt, slug } = props
   return (
     <section>
       <div className="mb-8 md:mb-16">
@@ -25,7 +24,6 @@ export default function HeroPost(props: PostProps) {
         </div>
         <div>
           <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-          {author && <Avatar name={author.name} picture={author.picture} />}
         </div>
       </div>
     </section>

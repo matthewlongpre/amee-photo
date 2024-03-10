@@ -7,18 +7,26 @@ import { createClient } from 'next-sanity'
 
 import { sanityConfig } from './config'
 
-export const getClient = (preview) =>
-  preview
-    ? createClient({
-        ...sanityConfig,
-        useCdn: false,
-        token:
-          process.env.SANITY_API_READ_TOKEN ||
-          process.env.SANITY_API_WRITE_TOKEN,
-      })
-    : createClient(sanityConfig)
+type Options = {
+  isPreview: boolean
+}
 
-export function overlayDrafts(docs) {
+export function getClient(options: Options = { isPreview: false }) {
+  const { isPreview } = options
+
+  if (isPreview) {
+    return createClient({
+      ...sanityConfig,
+      useCdn: false,
+      token:
+        process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
+    })
+  }
+
+  return createClient(sanityConfig)
+}
+
+export function overlayDrafts<T>(docs): T[] {
   const documents = docs || []
   const overlayed = documents.reduce((map, doc) => {
     if (!doc._id) {
@@ -30,5 +38,5 @@ export function overlayDrafts(docs) {
     return isDraft || !map.has(id) ? map.set(id, doc) : map
   }, new Map())
 
-  return Array.from(overlayed.values())
+  return Array.from(overlayed.values()) as T[]
 }
