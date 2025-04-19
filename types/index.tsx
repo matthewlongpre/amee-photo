@@ -6,14 +6,22 @@ export interface AuthorProps {
 }
 
 export interface PostProps {
+  _id: string
+  name: string
   title: string
+  subTitle: string
   coverImage: CoverImage
   date: string
-  excerpt?: string
+  excerpt: string
   author: AuthorProps
-  slug?: string
-  content?: any
-  subTitle?: string
+  slug: string
+  content: Block[]
+  isFeatured?: boolean
+}
+
+export interface PostQueryResponse {
+  post: PostProps
+  morePosts: PostProps[]
 }
 
 export interface EmptyProps {
