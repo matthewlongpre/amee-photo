@@ -19,7 +19,7 @@ module.exports = {
     return [
       {
         source: '/:year/:month/:day/:post',
-        destination: '/posts/:post',
+        destination: '/stories/:post',
         permanent: true,
       },
     ]

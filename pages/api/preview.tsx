@@ -21,7 +21,7 @@ export default async function preview(req, res) {
   }
 
   // Check if the post with the given `slug` exists
-  const post = await getClient(true).fetch(postBySlugQuery, {
+  const post = await getClient({ isPreview: true }).fetch(postBySlugQuery, {
     slug: req.query.slug,
   })
 
@@ -32,5 +32,5 @@ export default async function preview(req, res) {
 
   // Redirect to the path from the fetched post
   // We don't redirect to req.query.slug as that might lead to open redirect vulnerabilities
-  redirectToPreview(res, `/posts/${post.slug}`)
+  redirectToPreview(res, `/stories/${post.slug}`)
 }

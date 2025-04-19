@@ -11,10 +11,14 @@ export default function Pictime({ snippet }: PictimePublishProps) {
   >([])
 
   useEffect(() => {
-    setElements(parseSnippet(snippet))
+    const elements = parseSnippet(snippet)
+
+    if (!elements) return
+
+    setElements(elements)
   }, [snippet])
 
-  if (!template || scripts.length === 0) {
+  if (!template || !scripts.length) {
     return null
   }
 
@@ -38,8 +42,9 @@ export default function Pictime({ snippet }: PictimePublishProps) {
   )
 }
 
-function isTemplateElement(element: Element): element is HTMLTemplateElement {
-  return element instanceof HTMLTemplateElement
+function isTemplateElement(input?: unknown): input is HTMLTemplateElement {
+  if (!input) return false
+  return input instanceof HTMLTemplateElement
 }
 
 function parseSnippet(htmlString: string) {
@@ -57,6 +62,8 @@ function parseSnippet(htmlString: string) {
   }
 
   const template = getTemplate()
+
+  if (!template) return
 
   return [template, ...Array.from(doc.scripts)] as const
 }

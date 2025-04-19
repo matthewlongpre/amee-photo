@@ -81,7 +81,7 @@ export default async function Home() {
     <>
       <section className="h-screen">
         <Container>
-          {featuredPosts.length && <FeaturedPosts posts={featuredPosts} />}
+          {Boolean(featuredPosts.length) && <FeaturedPosts posts={featuredPosts} />}
         </Container>
       </section>
 

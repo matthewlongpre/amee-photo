@@ -1,3 +1,5 @@
+import { Block } from 'sanity'
+
 export interface AuthorProps {
   name: string
   picture: any

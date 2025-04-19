@@ -23,10 +23,10 @@ export default async function Page() {
           date={heroPost.date}
           author={heroPost.author}
           slug={heroPost.slug}
-          excerpt={heroPost.excerpt ?? ''}
+          excerpt={heroPost.excerpt}
         />
       )}
-      {morePosts.length && <MoreStories posts={morePosts} />}
+      {Boolean(morePosts.length) && <MoreStories posts={morePosts} />}
     </Container>
   )
 }

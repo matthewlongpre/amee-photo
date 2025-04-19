@@ -44,17 +44,23 @@ export default function RootLayout({ children }: EmptyProps) {
       </head>
       <body>
         <header className="flex flex-col items-center gap-2 py-8">
-          <nav className="flex">
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/stories">Stories</NavLink>
-            <Logo className="mx-4 w-12" />
-            <NavLink href="/info">Info</NavLink>
-            <NavLink href="/contact">Contact</NavLink>
-          </nav>
+          <Nav />
         </header>
         <main>{children}</main>
       </body>
     </html>
+  )
+}
+
+function Nav() {
+  return (
+    <nav className="flex">
+      <NavLink href="/">Home</NavLink>
+      <NavLink href="/stories">Stories</NavLink>
+      <Logo className="mx-4 w-12" />
+      <NavLink href="/info">Info</NavLink>
+      <NavLink href="/contact">Contact</NavLink>
+    </nav>
   )
 }
 

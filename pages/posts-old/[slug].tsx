@@ -79,10 +79,15 @@ export default function Post(props: Props) {
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const { post, morePosts } = await getClient(preview).fetch(postQuery, {
-    slug: params.slug,
-  })
-  const blogSettings = await getClient(preview).fetch(settingsQuery)
+  const { post, morePosts } = await getClient({ isPreview: preview }).fetch(
+    postQuery,
+    {
+      slug: params.slug,
+    }
+  )
+  const blogSettings = await getClient({ isPreview: preview }).fetch(
+    settingsQuery
+  )
 
   return {
     props: {
@@ -99,7 +104,7 @@ export async function getStaticProps({ params, preview = false }) {
 }
 
 export async function getStaticPaths() {
-  const paths = await getClient(false).fetch(postSlugsQuery)
+  const paths = await getClient({ isPreview: false }).fetch(postSlugsQuery)
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
     fallback: true,

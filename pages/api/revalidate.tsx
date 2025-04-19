@@ -91,10 +91,16 @@ export default async function revalidate(req, res) {
   }
 
   log(`Querying post slug for _id '${id}', type '${_type}' ..`)
-  const slug = await getClient(false).fetch(getQueryForType(_type), { id })
-  const slugs = (Array.isArray(slug) ? slug : [slug]).map(
-    (_slug) => `/posts/${_slug}`
+
+  const slug = await getClient({ isPreview: false }).fetch(
+    getQueryForType(_type),
+    { id }
   )
+
+  const slugs = (Array.isArray(slug) ? slug : [slug]).map(
+    (_slug) => `/stories/${_slug}`
+  )
+
   const staleRoutes = ['/', ...slugs]
 
   try {
