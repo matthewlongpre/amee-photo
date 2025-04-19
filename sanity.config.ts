@@ -14,7 +14,6 @@ import buttonType from './schemas/button'
 import component from './schemas/component'
 import headingType from './schemas/heading'
 import homePageType from './schemas/homePage'
-import narrativePublish from './schemas/narrativePublish'
 import pageType from './schemas/page'
 import pictime from './schemas/pictime'
 import postType from './schemas/post'
@@ -57,7 +56,6 @@ export default createConfig({
       buttonType,
       headingType,
       homePageType,
-      narrativePublish,
       pageType,
       pictime,
       postType,

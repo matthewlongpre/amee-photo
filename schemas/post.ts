@@ -2,7 +2,6 @@ import { BookIcon } from '@sanity/icons'
 import { defineType } from 'sanity'
 
 import authorType from './author'
-import narrativePublish from './narrativePublish'
 import pictime from './pictime'
 
 /**
@@ -16,6 +15,45 @@ import pictime from './pictime'
   https://www.sanity.io/docs/schema-types
 
  */
+
+const richText = {
+  type: 'block',
+  styles: [
+    { title: 'Normal', value: 'normal' },
+    { title: 'H1', value: 'h1' },
+    { title: 'H2', value: 'h2' },
+    { title: 'H3', value: 'h3' },
+    { title: 'H4', value: 'h4' },
+    { title: 'Quote', value: 'blockquote' },
+  ],
+  lists: [
+    { title: 'Bullet', value: 'bullet' },
+    { title: 'Number', value: 'number' },
+  ],
+  marks: {
+    decorators: [
+      { title: 'Strong', value: 'strong' },
+      { title: 'Emphasis', value: 'em' },
+      { title: 'Code', value: 'code' },
+      { title: 'Underline', value: 'underline' },
+      { title: 'Strike', value: 'strike-through' },
+    ],
+    annotations: [
+      {
+        name: 'link',
+        type: 'object',
+        title: 'Link',
+        fields: [
+          {
+            name: 'href',
+            type: 'url',
+            title: 'URL',
+          },
+        ],
+      },
+    ],
+  },
+}
 
 export default defineType({
   name: 'post',
@@ -60,11 +98,7 @@ export default defineType({
       name: 'content',
       title: 'Content',
       type: 'array',
-      of: [
-        { type: 'block' },
-        { type: pictime.name },
-        { type: narrativePublish.name },
-      ],
+      of: [richText, { type: pictime.name }],
     },
     {
       name: 'excerpt',
