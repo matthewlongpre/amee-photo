@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f .git ] && [ ! -L .env ]; then gitdir=$(sed 's/gitdir: //' .git); reporoot=$(dirname \"$(dirname \"$(dirname \"$gitdir\")\"))\"); [ -f \"$reporoot/.env\" ] && ln -sf \"$reporoot/.env\" .env; fi 2>/dev/null || true",
+            "statusMessage": "Linking .env from repo root..."
+          }
+        ]
+      }
+    ]
+  }
+}
