@@ -7,10 +7,12 @@ const config: StorybookConfig = {
   ],
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-a11y',
+    '@storybook/addon-docs',
   ],
-  framework: '@storybook/nextjs',
+  framework: {
+    name: '@storybook/nextjs',
+    options: {},
+  },
   staticDirs: ['../public'],
 };
 export default config;

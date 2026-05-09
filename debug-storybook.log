@@ -1,35 +1,26 @@
-[15:11:22.034] [INFO] storybook v10.3.6
-[15:11:22.690] [DEBUG] Getting package.json info for /Users/Personal/Source/amee-photo/.claude/worktrees/upbeat-villani-4833c3/package.json...
-[15:11:23.080] [ERROR] [38;2;241;97;97mSB_CORE-SERVER_0002 (CriticalPresetLoadError): Storybook failed to load the following preset: @storybook/nextjs-vite/preset.
-
-Please check whether your setup is correct, the Storybook dependencies (and their peer dependencies) are installed correctly and there are no package version clashes.
-
-If you believe this is a bug, please open an issue on Github.
-
-Error: Cannot find module 'next/dist/compiled/@next/font/dist/google/fetch-css-from-google-fonts.js'
-Require stack:
-- ./node_modules/vite-plugin-storybook-nextjs/dist/index.cjs
-- ./node_modules/@storybook/nextjs-vite/dist/preset.js
-    at Function._resolveFilename (node:internal/modules/cjs/loader:1409:15)
-    at defaultResolveImpl (node:internal/modules/cjs/loader:1060:19)
-    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1065:22)
-    at Function._load (node:internal/modules/cjs/loader:1214:37)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:234:24)
-    at Module.require (node:internal/modules/cjs/loader:1495:12)
-    at require (node:internal/modules/helpers:135:16)
-    at Object.<anonymous> (./node_modules/vite-plugin-storybook-nextjs/dist/index.cjs:11:34)
-    at Module._compile (node:internal/modules/cjs/loader:1739:14)
-
-More info: 
-[39m
-    at loadPreset (file://./node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:10081:13)
-    at async Promise.all (index 0)
-    at async loadPresets (file://./node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:10090:73)
-    at async getPresets (file://./node_modules/storybook/dist/_node-chunks/chunk-H4PWFMMO.js:10121:23)
-    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7967:52)
+[16:36:05.030] [INFO] storybook v10.3.6
+[16:36:05.719] [DEBUG] Getting package.json info for /Users/Personal/Source/amee-photo/.claude/worktrees/upbeat-villani-4833c3/package.json...
+[16:36:06.613] [DEBUG] Serving static files from [36mpublic[39m at [36m/[39m
+[16:36:06.615] [INFO] Starting...
+[16:36:06.774] [DEBUG] Starting preview..
+[16:36:06.790] [INFO] Addon-docs: using MDX3
+[16:36:06.806] [INFO] Using implicit CSS loaders
+[16:36:07.002] [INFO] Using SWC as compiler
+[16:36:07.037] [INFO] Using default Webpack5 setup
+[16:36:07.564] [DEBUG] Using tsconfig paths for react-docgen
+[16:36:09.750] [ERROR] Failed to build the preview
+[16:36:09.770] [WARN] Force closed preview build
+[16:36:09.771] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
+Run Storybook with --debug-webpack for more information.[39m
+    at starter (file://./node_modules/@storybook/builder-webpack5/dist/index.js:799:11)
+    at starter.next (<anonymous>)
+    at Module.start (file://./node_modules/@storybook/builder-webpack5/dist/index.js:857:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async storybookDevServer (file://./node_modules/storybook/dist/core-server/index.js:7503:83)
+    at async buildOrThrow (file://./node_modules/storybook/dist/core-server/index.js:4508:12)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:8033:41)
     at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-UYONHJJP.js:225:12)
     at async dev (file://./node_modules/storybook/dist/bin/core.js:2736:3)
     at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2806:92)
-[15:11:23.082] [WARN] Broken build, fix the error above.
+[16:36:09.773] [WARN] Broken build, fix the error above.
 You may need to refresh the browser.
