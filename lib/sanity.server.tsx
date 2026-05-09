@@ -3,7 +3,7 @@
  * utilities we use on the client side, we are able to tree-shake (remove)
  * code that is not used on the client side.
  */
-import { createClient } from 'next-sanity'
+import { createClient as createSanityClient } from '@sanity/client'
 
 import { sanityConfig } from './config'
 
@@ -15,15 +15,22 @@ export function getClient(options: Options = { isPreview: false }) {
   const { isPreview } = options
 
   if (isPreview) {
-    return createClient({
-      ...sanityConfig,
+    return createSanityClient({
+      projectId: sanityConfig.projectId,
+      dataset: sanityConfig.dataset,
+      apiVersion: sanityConfig.apiVersion,
       useCdn: false,
       token:
         process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
     })
   }
 
-  return createClient(sanityConfig)
+  return createSanityClient({
+    projectId: sanityConfig.projectId,
+    dataset: sanityConfig.dataset,
+    apiVersion: sanityConfig.apiVersion,
+    useCdn: sanityConfig.useCdn,
+  })
 }
 
 export function overlayDrafts<T>(docs): T[] {

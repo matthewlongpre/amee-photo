@@ -11,7 +11,7 @@ import { PostProps } from '../types'
 
 async function getFeaturedPosts() {
   const client = getClient()
-  return client.fetch<PostProps[]>(featuredPostsQuery)
+  return client.fetch(featuredPostsQuery) as Promise<PostProps[]>
 }
 
 function getContent() {

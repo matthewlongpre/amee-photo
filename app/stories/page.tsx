@@ -17,14 +17,7 @@ export default async function Page() {
   return (
     <Container>
       {heroPost && (
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
-        />
+        <HeroPost {...heroPost} />
       )}
       {Boolean(morePosts.length) && <MoreStories posts={morePosts} />}
     </Container>
