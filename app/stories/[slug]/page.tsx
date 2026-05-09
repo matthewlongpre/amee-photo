@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+
 import Container from '../../../components/container'
 import { FormattedDate } from '../../../components/FormattedDate'
 import Pictime from '../../../components/pictime'
@@ -8,9 +10,17 @@ import { getClient } from '../../../lib/sanity.server'
 import { PostQueryResponse } from '../../../types'
 
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (!params?.slug) {
+    notFound()
+  }
+
   const { post } = await getClient().fetch<PostQueryResponse>(postQuery, {
     slug: params.slug,
   })
+
+  if (!post) {
+    notFound()
+  }
 
   return (
     <Container className="max-w-4xl">
