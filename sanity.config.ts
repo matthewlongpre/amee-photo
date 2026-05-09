@@ -25,22 +25,30 @@ import vendor from './schemas/vendor'
 
 const basePath = '/studio'
 
+// Safe env access for both Next.js (process.env) and standalone Sanity Studio (import.meta.env via Vite)
+const getEnv = (key: string): string | undefined => {
+  if (typeof process !== 'undefined') return process.env[key]
+  return (import.meta as any).env?.[key]
+}
+
 const projectId = () => {
-  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+  const value = getEnv('NEXT_PUBLIC_SANITY_PROJECT_ID')
+  if (!value) {
     throw new Error(
       'The `NEXT_PUBLIC_SANITY_PROJECT_ID` environment variable is not set'
     )
   }
-  return process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+  return value
 }
 
 const dataset = () => {
-  if (!process.env.NEXT_PUBLIC_SANITY_DATASET) {
+  const value = getEnv('NEXT_PUBLIC_SANITY_DATASET')
+  if (!value) {
     throw new Error(
       'The `NEXT_PUBLIC_SANITY_DATASET` environment variable is not set'
     )
   }
-  return process.env.NEXT_PUBLIC_SANITY_DATASET
+  return value
 }
 
 export default createConfig({
@@ -48,7 +56,7 @@ export default createConfig({
   projectId: projectId(),
   dataset: dataset(),
   title:
-    process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
+    getEnv('NEXT_PUBLIC_SANITY_PROJECT_TITLE') ||
     'Next.js Blog with Sanity.io',
   schema: {
     // If you want more content types, you can add them to this array
@@ -137,7 +145,7 @@ export default createConfig({
   document: {
     productionUrl: async (prev, { document }) => {
       const url = new URL('/api/preview', location.origin)
-      const secret = process.env.NEXT_PUBLIC_PREVIEW_SECRET
+      const secret = getEnv('NEXT_PUBLIC_PREVIEW_SECRET')
       if (secret) {
         url.searchParams.set('secret', secret)
       }

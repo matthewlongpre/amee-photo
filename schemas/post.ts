@@ -3,6 +3,7 @@ import { defineType } from 'sanity'
 
 import authorType from './author'
 import gallery from './gallery'
+import pictime from './pictime'
 import vendor from './vendor'
 
 /**
@@ -99,20 +100,7 @@ export default defineType({
       name: 'content',
       title: 'Content',
       type: 'array',
-      of: [richText],
-    },
-    {
-      name: 'gallery',
-      title: 'Gallery',
-      type: gallery.name,
-      description: 'Add a PicTime gallery to this post',
-    },
-    {
-      name: 'vendors',
-      title: 'Vendors',
-      type: 'array',
-      of: [{ type: vendor.name }],
-      description: 'List of vendors involved in this shoot',
+      of: [richText, { type: pictime.name }],
     },
     {
       name: 'excerpt',
@@ -137,6 +125,17 @@ export default defineType({
       title: 'Author',
       type: 'reference',
       to: [{ type: authorType.name }],
+    },
+    {
+      name: 'gallery',
+      title: 'Gallery',
+      type: gallery.name,
+    },
+    {
+      name: 'vendors',
+      title: 'Vendors',
+      type: 'array',
+      of: [{ type: vendor.name }],
     },
   ],
   preview: {
