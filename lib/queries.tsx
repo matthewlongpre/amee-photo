@@ -10,6 +10,11 @@ const postFields = groq`
   subTitle,
   "slug": slug.current,
   "author": author->{name, picture},
+  vendors[]{
+    category,
+    name,
+    url
+  }
 `
 
 export const settingsQuery = groq`*[_type == "settings"][0]{title}`
@@ -49,10 +54,12 @@ export const postQuery = groq`
 {
   "post": *[_type == "post" && slug.current == $slug] | order(_updatedAt desc) [0] {
     content,
+    gallery,
     ${postFields}
   },
   "morePosts": *[_type == "post" && slug.current != $slug] | order(date desc, _updatedAt desc) [0...2] {
     content,
+    gallery,
     ${postFields}
   }
 }`

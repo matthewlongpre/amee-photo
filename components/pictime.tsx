@@ -1,4 +1,5 @@
-import Head from 'next/head'
+'use client'
+
 import { useEffect, useState } from 'react'
 
 interface PictimePublishProps {

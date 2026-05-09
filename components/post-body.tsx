@@ -20,9 +20,9 @@ const portableTextComponents = {
   },
 } as const
 
-export default function PostBody({ content }) {
+export default function PostBody({ className, content }) {
   return (
-    <div className={`mx-auto ${portableTextStyles.portableText}`}>
+    <div className={`mx-auto ${className} ${portableTextStyles.portableText}`}>
       <PortableText value={content} components={portableTextComponents} />
     </div>
   )

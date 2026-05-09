@@ -5,6 +5,12 @@ export interface AuthorProps {
   picture: any
 }
 
+export interface Vendor {
+  category: string
+  name: string
+  url?: string
+}
+
 export interface PostProps {
   _id: string
   name: string
@@ -17,6 +23,10 @@ export interface PostProps {
   slug: string
   content: Block[]
   isFeatured?: boolean
+  vendors?: Vendor[]
+  gallery?: {
+    snippet: string
+  }
 }
 
 export interface PostQueryResponse {

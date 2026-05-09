@@ -2,7 +2,8 @@ import { BookIcon } from '@sanity/icons'
 import { defineType } from 'sanity'
 
 import authorType from './author'
-import pictime from './pictime'
+import gallery from './gallery'
+import vendor from './vendor'
 
 /**
  * This file is the schema definition for a post.
@@ -98,7 +99,20 @@ export default defineType({
       name: 'content',
       title: 'Content',
       type: 'array',
-      of: [richText, { type: pictime.name }],
+      of: [richText],
+    },
+    {
+      name: 'gallery',
+      title: 'Gallery',
+      type: gallery.name,
+      description: 'Add a PicTime gallery to this post',
+    },
+    {
+      name: 'vendors',
+      title: 'Vendors',
+      type: 'array',
+      of: [{ type: vendor.name }],
+      description: 'List of vendors involved in this shoot',
     },
     {
       name: 'excerpt',

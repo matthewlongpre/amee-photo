@@ -12,6 +12,7 @@ import aboutSection from './schemas/aboutSection'
 import authorType from './schemas/author'
 import buttonType from './schemas/button'
 import component from './schemas/component'
+import gallery from './schemas/gallery'
 import headingType from './schemas/heading'
 import homePageType from './schemas/homePage'
 import pageType from './schemas/page'
@@ -20,6 +21,7 @@ import postType from './schemas/post'
 import settingsType from './schemas/settings'
 import testimonial from './schemas/testimonial'
 import testimonialsList from './schemas/testimonialsList'
+import vendor from './schemas/vendor'
 
 const basePath = '/studio'
 
@@ -54,15 +56,17 @@ export default createConfig({
       aboutSection,
       authorType,
       buttonType,
+      component,
+      gallery,
       headingType,
       homePageType,
       pageType,
       pictime,
       postType,
       settingsType,
-      component,
       testimonial,
       testimonialsList,
+      vendor,
     ],
   },
   plugins: [
@@ -106,10 +110,10 @@ export default createConfig({
           ])
       },
 
-      // `defaultDocumentNode is responsible for adding a “Preview” tab to the document pane
+      // `defaultDocumentNode is responsible for adding a "Preview" tab to the document pane
       // You can add any React component to `S.view.component` and it will be rendered in the pane
       // and have access to content in the form in real-time.
-      // It's part of the Studio's “Structure Builder API” and is documented here:
+      // It's part of the Studio's "Structure Builder API" and is documented here:
       // https://www.sanity.io/docs/structure-builder-reference
       defaultDocumentNode: (S, { schemaType }) => {
         if (schemaType === 'post') {

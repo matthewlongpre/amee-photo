@@ -74,22 +74,24 @@ const serializers = {
 }
 
 export default async function Home() {
-  const featuredPosts = await getFeaturedPosts()
-  const content = await getContent()
+  // const featuredPosts = await getFeaturedPosts()
+  // const content = await getContent()
 
   return (
     <>
       <section className="h-screen">
-        <Container>
-          {Boolean(featuredPosts.length) && <FeaturedPosts posts={featuredPosts} />}
-        </Container>
+        {/* <Container>
+          {Boolean(featuredPosts.length) && (
+            <FeaturedPosts posts={featuredPosts} />
+          )}
+        </Container> */}
       </section>
 
-      <section>
+      {/* <section>
         <Container className="text-center">
           <BlockContent blocks={content.sections} serializers={serializers} />
         </Container>
-      </section>
+      </section> */}
     </>
   )
 }
