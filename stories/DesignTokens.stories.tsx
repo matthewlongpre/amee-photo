@@ -25,7 +25,7 @@ const colors = {
 
 const typography = {
   font_families: {
-    heading: 'Lora, serif',
+    heading: 'Quincy, serif',
     body: 'Karla, sans-serif',
   },
   sizes: [
@@ -70,12 +70,12 @@ const ColorSwatch = ({ name, value, description }: { name: string; value: string
 
 export const Colors = () => (
   <div className="p-8 bg-white">
-    <h1 className="text-7xl font-bold mb-8" style={{ fontFamily: 'Lora, serif' }}>
+    <h1 className="text-7xl font-bold mb-8" style={{ fontFamily: 'Quincy, serif' }}>
       Color Palette
     </h1>
 
     <div className="mb-12">
-      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Lora, serif' }}>
+      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Quincy, serif' }}>
         Neutrals
       </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -86,7 +86,7 @@ export const Colors = () => (
     </div>
 
     <div>
-      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Lora, serif' }}>
+      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Quincy, serif' }}>
         Accent Colors
       </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -100,12 +100,12 @@ export const Colors = () => (
 
 export const Typography = () => (
   <div className="p-8 bg-white">
-    <h1 className="text-7xl font-bold mb-8" style={{ fontFamily: 'Lora, serif' }}>
+    <h1 className="text-7xl font-bold mb-8" style={{ fontFamily: 'Quincy, serif' }}>
       Typography
     </h1>
 
     <div className="mb-12">
-      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Lora, serif' }}>
+      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Quincy, serif' }}>
         Font Families
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -114,7 +114,7 @@ export const Typography = () => (
             className="text-3xl font-bold mb-2"
             style={{ fontFamily: typography.font_families.heading }}
           >
-            Lora
+            Quincy
           </div>
           <div className="text-sm text-gray-600">Heading font (serif)</div>
         </div>
@@ -131,7 +131,7 @@ export const Typography = () => (
     </div>
 
     <div className="mb-12">
-      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Lora, serif' }}>
+      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Quincy, serif' }}>
         Font Sizes
       </h2>
       <div className="space-y-4">
@@ -139,7 +139,7 @@ export const Typography = () => (
           <div key={item.size} className="p-4 border border-accent-2 rounded">
             <div
               className="font-bold text-accent-7 mb-2"
-              style={{ fontSize: item.value, fontFamily: 'Lora, serif' }}
+              style={{ fontSize: item.value, fontFamily: 'Quincy, serif' }}
             >
               {item.size}
             </div>
@@ -152,7 +152,7 @@ export const Typography = () => (
     </div>
 
     <div className="mb-12">
-      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Lora, serif' }}>
+      <h2 className="text-4xl font-semibold mb-6 text-accent-7" style={{ fontFamily: 'Quincy, serif' }}>
         Line Height & Letter Spacing
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -176,7 +176,7 @@ export const Typography = () => (
 
 export const Spacing = () => (
   <div className="p-8 bg-white">
-    <h1 className="text-7xl font-bold mb-8" style={{ fontFamily: 'Lora, serif' }}>
+    <h1 className="text-7xl font-bold mb-8" style={{ fontFamily: 'Quincy, serif' }}>
       Spacing System
     </h1>
 
@@ -201,7 +201,7 @@ export const Spacing = () => (
 
 export const Shadows = () => (
   <div className="p-8 bg-accent-1">
-    <h1 className="text-7xl font-bold mb-8 text-accent-7" style={{ fontFamily: 'Lora, serif' }}>
+    <h1 className="text-7xl font-bold mb-8 text-accent-7" style={{ fontFamily: 'Quincy, serif' }}>
       Shadows
     </h1>
 
@@ -229,7 +229,7 @@ export const Overview = () => (
   <div className="p-8 bg-white">
     <h1
       className="text-8xl font-bold mb-4 text-accent-7"
-      style={{ fontFamily: 'Lora, serif' }}
+      style={{ fontFamily: 'Quincy, serif' }}
     >
       Design System
     </h1>
@@ -257,11 +257,11 @@ export const Overview = () => (
     </div>
 
     <div className="bg-accent-1 p-8 rounded">
-      <h2 className="text-3xl font-semibold text-accent-7 mb-4" style={{ fontFamily: 'Lora, serif' }}>
+      <h2 className="text-3xl font-semibold text-accent-7 mb-4" style={{ fontFamily: 'Quincy, serif' }}>
         Quick Reference
       </h2>
       <ul className="space-y-2 text-sm text-gray-600" style={{ fontFamily: 'Karla, sans-serif' }}>
-        <li>• Headings: Lora (serif) font family</li>
+        <li>• Headings: Quincy (serif) font family</li>
         <li>• Body text: Karla (sans-serif) font family</li>
         <li>• Primary neutrals: accent-1 through accent-7</li>
         <li>• Accent colors: success, cyan, blue-500, yellow-100</li>

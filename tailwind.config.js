@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Lora', 'serif'],
+        serif: ['Quincy', 'serif'],
         'sans': ['Karla', 'sans-serif'],
       },
       colors: {
