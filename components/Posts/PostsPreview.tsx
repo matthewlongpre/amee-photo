@@ -9,18 +9,25 @@ export function PostsPreview(props: any) {
   // if the document has no slug for the preview iframe
   if (!props.document.displayed.slug) {
     return (
-      <Card tone="primary" margin={5} padding={6}>
-        <Text align="center">
-          Please add a slug to the post to see the preview!
-        </Text>
-      </Card>
+      <div>
+        {/* @ts-ignore - React 19 compatibility with @sanity/ui */}
+        <Card tone="primary" margin={5} padding={6}>
+          {/* @ts-ignore - React 19 compatibility with @sanity/ui */}
+          <Text align="center">
+            Please add a slug to the post to see the preview!
+          </Text>
+        </Card>
+      </div>
     )
   }
 
   return (
-    <Card scheme="light" style={{ width: '100%', height: '100%' }}>
-      <iframe style={{ width: '100%', height: '100%' }} src={getUrl(props)} />
-    </Card>
+    <div>
+      {/* @ts-ignore - React 19 compatibility with @sanity/ui */}
+      <Card scheme="light" style={{ width: '100%', height: '100%' }}>
+        <iframe style={{ width: '100%', height: '100%' }} src={getUrl(props)} />
+      </Card>
+    </div>
   )
 }
 
