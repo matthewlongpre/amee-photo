@@ -25,7 +25,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
       <div className="relative flex flex-col lg:h-[768px] lg:w-[1216px] lg:shrink-0 lg:overflow-clip">
 
         {/* Image panel */}
-        <div className="relative h-72 w-full overflow-hidden sm:h-96 lg:absolute lg:left-0 lg:top-0 lg:h-[640px] lg:w-[640px] lg:overflow-visible">
+        <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/9] lg:aspect-auto lg:absolute lg:left-0 lg:top-0 lg:h-[640px] lg:w-[640px] lg:overflow-visible">
           <div aria-hidden="true" className="absolute inset-0 bg-warm-50">
             {imageSrc && (
               <Image
