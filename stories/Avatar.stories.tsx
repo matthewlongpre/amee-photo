@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import Image from 'next/image'
 import { AuthorProps } from '../types/index'
 
 // Mock component that doesn't require Sanity integration for storybook
 const AvatarMock = ({ name, picture }: AuthorProps) => {
+  // Use a simple placeholder image URL that works in Storybook
   const imageUrl = picture?.asset?._ref
-    ? 'https://source.unsplash.com/96x96/?face,photographer'
-    : 'https://source.unsplash.com/96x96/?face'
+    ? 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2296%22%3E%3Crect fill=%22%23ddd%22 width=%2296%22 height=%2296%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2212%22 fill=%22%23999%22%3EAvatar%3C/text%3E%3C/svg%3E'
+    : 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2296%22%3E%3Crect fill=%22%23e0e0e0%22 width=%2296%22 height=%2296%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2212%22 fill=%22%23aaa%22%3ENo Image%3C/text%3E%3C/svg%3E'
 
   return (
     <div className="flex items-center">
-      <div className="relative mr-4 h-12 w-12">
-        <Image
+      <div className="relative mr-4 h-12 w-12 overflow-hidden rounded-full">
+        <img
           src={imageUrl}
-          className="rounded-full"
+          className="h-full w-full object-cover"
           height={96}
           width={96}
           alt={name}
