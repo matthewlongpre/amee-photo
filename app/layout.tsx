@@ -1,16 +1,20 @@
 import '../styles/index.css'
 
-import Link from 'next/link'
 import React from 'react'
 
-import { Logo } from '../components/logo'
 import { EmptyProps } from '../types'
+
+export const metadata = {
+  title: 'Amee Longpre Photography',
+  description: 'Professional wedding and engagement photography in Victoria, BC',
+}
 
 export default function RootLayout({ children }: EmptyProps) {
   return (
-    <html>
+    <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -40,39 +44,13 @@ export default function RootLayout({ children }: EmptyProps) {
           name="msapplication-config"
           content="/favicon/browserconfig.xml"
         />
-        <meta name="theme-color" content="#000" />
+        <meta name="theme-color" content="#f8f8f8" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>
-        <header className="flex flex-col items-center gap-2 py-8">
-          <Nav />
-        </header>
-        <main>{children}</main>
-      </body>
+      <body className="bg-white">{children}</body>
     </html>
-  )
-}
-
-function Nav() {
-  return (
-    <nav className="flex">
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/stories">Stories</NavLink>
-      <Logo className="mx-4 w-12" />
-      <NavLink href="/info">Info</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
-    </nav>
-  )
-}
-
-interface NavLinkProps {
-  children: React.ReactNode
-  href: string
-}
-
-function NavLink({ children, href }: NavLinkProps) {
-  return (
-    <Link className="flex p-4 text-sm uppercase tracking-wide" href={href}>
-      {children}
-    </Link>
   )
 }

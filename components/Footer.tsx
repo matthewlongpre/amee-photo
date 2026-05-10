@@ -2,8 +2,8 @@
 
 import { Logo } from './logo'
 
-const imgInstagram = 'http://localhost:3845/assets/cf64d66f419e7618122b604278c02a268d3dc038.svg'
-const imgFacebook = 'http://localhost:3845/assets/cdc4875d3820330035954650a05d70a1ea8c5963.svg'
+const imgInstagram = '/images/icon-instagram.svg'
+const imgFacebook = '/images/icon-facebook.svg'
 
 export default function Footer() {
   return (

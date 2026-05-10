@@ -1,97 +1,39 @@
-import BlockContent from '@sanity/block-content-to-react'
-import Image from 'next/image'
-import Link from 'next/link'
-
-import Container from '../components/container'
 import { FeaturedPosts } from '../components/FeaturedPosts'
-import { featuredPostsQuery, homePageQuery } from '../lib/queries'
-import { urlForImage } from '../lib/sanity'
+import AboutSection from '../components/AboutSection'
+import LatestStories from '../components/LatestStories'
+import Testimonials from '../components/Testimonials'
+import Instagram from '../components/Instagram'
+import Footer from '../components/Footer'
+import { featuredPostsQuery, storiesQuery, homePageQuery } from '../lib/queries'
 import { getClient } from '../lib/sanity.server'
 import { PostProps } from '../types'
 
-async function getFeaturedPosts() {
+async function getData() {
   const client = getClient()
-  return client.fetch(featuredPostsQuery) as Promise<PostProps[]>
-}
-
-function getContent() {
-  const client = getClient()
-  return client.fetch(homePageQuery)
-}
-
-const Button = ({ node }) => {
-  const { text, linkType, url, path } = node
-  const href = linkType === 'absolute' ? url : path
-
-  return <Link href={href}>{text}</Link>
-}
-
-const serializers = {
-  types: {
-    button: (props) => <Button {...props} />,
-    heading: (props) => <h2>{props.node.text}</h2>,
-    aboutSection: (props) => {
-      const { heading, image, content } = props.node
-      return (
-        <div>
-          <h2>{heading}</h2>
-          <Image
-            alt="About"
-            src={urlForImage(image.asset).url()}
-            width={640}
-            height={640}
-          />
-          <BlockContent blocks={content} serializers={serializers} />
-        </div>
-      )
-    },
-    testimonialsList: (props) => {
-      const { heading, testimonials } = props.node
-
-      const items = testimonials ?? []
-
-      return (
-        <div>
-          <h2>{heading}</h2>
-          <ul>
-            {items.map((testimonial) => (
-              <li key={testimonial._id}>
-                <Image
-                  alt={testimonial.title}
-                  src={urlForImage(testimonial.image.asset).url()}
-                  width={640}
-                  height={640}
-                />
-                <h2>{testimonial.title}</h2>
-                <BlockContent blocks={testimonial.content} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )
-    },
-  },
+  const [featuredPosts, recentPosts, homePage] = await Promise.all([
+    client.fetch(featuredPostsQuery) as Promise<PostProps[]>,
+    client.fetch(storiesQuery) as Promise<PostProps[]>,
+    client.fetch(homePageQuery),
+  ])
+  return { featuredPosts, recentPosts, homePage }
 }
 
 export default async function Home() {
-  // const featuredPosts = await getFeaturedPosts()
-  // const content = await getContent()
+  const { featuredPosts, recentPosts, homePage } = await getData()
+
+  const aboutSection = homePage?.sections?.find((s) => s._type === 'aboutSection')
+  const testimonialsList = homePage?.sections?.find((s) => s._type === 'testimonialsList')
+
+  const heroPosts = featuredPosts.length ? featuredPosts : recentPosts.slice(0, 3)
 
   return (
-    <>
-      <section className="h-screen">
-        {/* <Container>
-          {Boolean(featuredPosts.length) && (
-            <FeaturedPosts posts={featuredPosts} />
-          )}
-        </Container> */}
-      </section>
-
-      {/* <section>
-        <Container className="text-center">
-          <BlockContent blocks={content.sections} serializers={serializers} />
-        </Container>
-      </section> */}
-    </>
+    <main className="w-full">
+      <FeaturedPosts posts={heroPosts} />
+      <AboutSection data={aboutSection} />
+      <LatestStories posts={recentPosts.slice(0, 3)} />
+      <Testimonials data={testimonialsList} />
+      <Instagram />
+      <Footer />
+    </main>
   )
 }

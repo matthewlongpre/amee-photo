@@ -33,6 +33,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# Sanity generated runtime
+.sanity/
+
 # Env files created by scripts for working locally
 .env
 studio/.env.development

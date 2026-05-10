@@ -21,7 +21,7 @@ export const settingsQuery = groq`*[_type == "settings"][0]{title}`
 
 export const featuredPostsQuery = groq`
 *[_type == "post" && isFeatured] | order(date desc, _updatedAt desc) {
-  ${postFields}
+  ${postFields},
   isFeatured
 }`
 

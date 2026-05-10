@@ -19,19 +19,21 @@ export function FeaturedPost({
 
   return (
     <div
-      className={merge('absolute inset-0 -z-10 h-full w-full', {
+      className={merge('absolute inset-x-0 top-0 bottom-[10%] transition-opacity duration-500', {
         'invisible opacity-0': !isVisible,
+        'opacity-100': isVisible,
       })}
     >
-      <Image
-        className="h-auto w-full"
-        alt={`Cover Image for ${title}`}
-        src={urlForImage(coverImage.asset._ref).height(1000).width(2000).url()}
-        sizes="100vw"
-        priority={priority}
-        layout="fill"
-        objectFit="cover"
-      />
+      {coverImage?.asset?._ref && (
+        <Image
+          alt={`Cover Image for ${title}`}
+          src={urlForImage(coverImage.asset._ref).height(1600).width(2400).url()}
+          sizes="100vw"
+          priority={priority}
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      )}
     </div>
   )
 }

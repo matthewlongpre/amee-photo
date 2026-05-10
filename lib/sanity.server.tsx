@@ -3,7 +3,7 @@
  * utilities we use on the client side, we are able to tree-shake (remove)
  * code that is not used on the client side.
  */
-import { createClient as createSanityClient } from '@sanity/client'
+import createSanityClient from '@sanity/client'
 
 import { sanityConfig } from './config'
 
