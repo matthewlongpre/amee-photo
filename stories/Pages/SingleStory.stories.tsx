@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { SectionContainer } from '@/components/SectionContainer'
-import { Footer } from '@/components/Footer'
+import Footer from '@/components/Footer'
 import { mockSingleStoryWithCover, mockSingleStoryNoCover } from '@/stories/fixtures/posts'
 
 // Mock components for single story page

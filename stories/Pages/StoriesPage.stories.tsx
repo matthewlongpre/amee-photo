@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { SectionContainer } from '@/components/SectionContainer'
 import { SectionTitle } from '@/components/SectionTitle'
 import { SectionGrid } from '@/components/SectionGrid'
-import { Footer } from '@/components/Footer'
+import Footer from '@/components/Footer'
 import { mockStories } from '@/stories/fixtures/posts'
 
 // Mock components for stories page
