@@ -1,5 +1,73 @@
+/* Import Google Fonts - Karla for body text */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Quincy Font Faces - Local Web Fonts */
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-Light.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-LightItalic.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-Medium.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-Bold.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-BoldItalic.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-ExtraBold.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quincy';
+  src: url('/fonts/quincy/QuincyCF-Black.woff2') format('woff2'),
+       url('/fonts/quincy/QuincyCF-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+/* Font family overrides for design system */
+@layer base {
+  :root {
+    --font-serif: 'Quincy', serif;
+    --font-sans: 'Karla', sans-serif;
+  }
+}
