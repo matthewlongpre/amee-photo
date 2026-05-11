@@ -9,7 +9,7 @@ import { urlForImage } from '../lib/sanity'
 interface Testimonial {
   _id: string
   title: string
-  image?: { asset: { _ref: string } }
+  image?: { asset: { _ref?: string; url?: string } }
   content?: any[]
 }
 
@@ -33,9 +33,8 @@ export default function Testimonials({ data }: TestimonialsProps) {
 
   if (!current) return null
 
-  const imageSrc = current.image
-    ? urlForImage(current.image.asset._ref).width(640).height(640).url()
-    : null
+  const imageSrc = current.image?.asset?.url
+    ?? (current.image?.asset?._ref ? urlForImage(current.image.asset._ref).width(640).height(640).url() : null)
 
   return (
     <div className="overflow-hidden bg-warm-50 py-12 lg:py-20">

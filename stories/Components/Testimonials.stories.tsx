@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Testimonials } from '@/components/Testimonials'
+import Testimonials from '@/components/Testimonials'
 import { mockTestimonials } from '@/stories/fixtures/testimonials'
 
 const meta = {
@@ -14,71 +14,77 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-const testimonialContent = mockTestimonials.map((t) => ({
-  name: t.name,
-  quote: t.quote,
-  image: t.image,
-}))
+const toTestimonialData = (items: typeof mockTestimonials) => ({
+  heading: 'Kind Words',
+  testimonials: items.map((t, i) => ({
+    _id: `testimonial-${i}`,
+    title: t.name,
+    image: { asset: { url: t.image } },
+    content: [
+      {
+        _type: 'block',
+        _key: `block-${i}`,
+        children: [{ _type: 'span', _key: 'span-0', text: t.quote, marks: [] }],
+        markDefs: [],
+        style: 'normal',
+      },
+    ],
+  })),
+})
 
 export const Default: Story = {
   args: {
-    testimonials: testimonialContent,
+    data: toTestimonialData(mockTestimonials),
   },
 }
 
 export const SingleTestimonial: Story = {
   args: {
-    testimonials: testimonialContent.slice(0, 1),
+    data: toTestimonialData(mockTestimonials.slice(0, 1)),
   },
 }
 
 export const TwoTestimonials: Story = {
   args: {
-    testimonials: testimonialContent.slice(0, 2),
+    data: toTestimonialData(mockTestimonials.slice(0, 2)),
   },
 }
 
 export const ManyTestimonials: Story = {
   args: {
-    testimonials: testimonialContent,
+    data: toTestimonialData(mockTestimonials),
   },
 }
 
 export const Empty: Story = {
   args: {
-    testimonials: [],
+    data: { testimonials: [] },
   },
 }
 
 export const Mobile: Story = {
   args: {
-    testimonials: testimonialContent,
+    data: toTestimonialData(mockTestimonials),
   },
   parameters: {
-    viewport: {
-      defaultViewport: 'mobile',
-    },
+    viewport: { defaultViewport: 'mobile' },
   },
 }
 
 export const Tablet: Story = {
   args: {
-    testimonials: testimonialContent,
+    data: toTestimonialData(mockTestimonials),
   },
   parameters: {
-    viewport: {
-      defaultViewport: 'tablet',
-    },
+    viewport: { defaultViewport: 'tablet' },
   },
 }
 
 export const Desktop: Story = {
   args: {
-    testimonials: testimonialContent,
+    data: toTestimonialData(mockTestimonials),
   },
   parameters: {
-    viewport: {
-      defaultViewport: 'desktop',
-    },
+    viewport: { defaultViewport: 'desktop' },
   },
 }

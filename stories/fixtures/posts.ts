@@ -2,14 +2,7 @@ import { PostProps, Vendor } from '@/types'
 
 const sampleImage = (id: string) => ({
   asset: {
-    _id: id,
     url: `https://images.unsplash.com/photo-${id}?w=800&h=600&fit=crop`,
-    metadata: {
-      dimensions: {
-        height: 600,
-        width: 800,
-      },
-    },
   },
 })
 
@@ -29,37 +22,40 @@ export const mockFeaturedPosts: PostProps[] = [
     _id: 'post-1',
     title: 'Jenna & Jordan',
     subTitle: 'Downtown Victoria Engagement',
-    slug: { current: 'jenna-jordan-engagement' },
+    slug: 'jenna-jordan-engagement',
     date: '2023-08-12',
     excerpt:
       'A beautiful engagement session capturing the love between Jenna and Jordan in downtown Victoria.',
     coverImage: sampleImage('1529156069898'),
     author: { name: 'Amee Longpre' },
     name: 'Jenna & Jordan',
+    content: [],
   },
   {
     _id: 'post-2',
     title: 'Sarah & Michael',
     subTitle: 'Seaside Wedding Celebration',
-    slug: { current: 'sarah-michael-wedding' },
+    slug: 'sarah-michael-wedding',
     date: '2023-07-15',
     excerpt:
       'An intimate seaside wedding with stunning natural light and heartfelt moments.',
     coverImage: sampleImage('1511895426328'),
     author: { name: 'Amee Longpre' },
     name: 'Sarah & Michael',
+    content: [],
   },
   {
     _id: 'post-3',
     title: 'Emily & Christopher',
     subTitle: 'Garden Romance',
-    slug: { current: 'emily-christopher-wedding' },
+    slug: 'emily-christopher-wedding',
     date: '2023-06-20',
     excerpt:
       'A romantic garden wedding with gorgeous florals and intimate details.',
     coverImage: sampleImage('1520763185298'),
     author: { name: 'Amee Longpre' },
     name: 'Emily & Christopher',
+    content: [],
   },
 ]
 
@@ -68,72 +64,78 @@ export const mockStories: PostProps[] = [
     _id: 'post-featured-1',
     title: 'Jenna & Jordan',
     subTitle: 'Downtown Victoria Engagement',
-    slug: { current: 'jenna-jordan-engagement' },
+    slug: 'jenna-jordan-engagement',
     date: '2023-08-12',
     excerpt:
       'A beautiful engagement session capturing the love between Jenna and Jordan in downtown Victoria.',
     coverImage: sampleImage('1529156069898'),
     author: { name: 'Amee Longpre' },
     name: 'Jenna & Jordan',
+    content: [],
   },
   {
     _id: 'post-2',
     title: 'Sarah & Michael',
     subTitle: 'Seaside Wedding Celebration',
-    slug: { current: 'sarah-michael-wedding' },
+    slug: 'sarah-michael-wedding',
     date: '2023-07-15',
     excerpt:
       'An intimate seaside wedding with stunning natural light and heartfelt moments.',
     coverImage: sampleImage('1511895426328'),
     author: { name: 'Amee Longpre' },
     name: 'Sarah & Michael',
+    content: [],
   },
   {
     _id: 'post-3',
     title: 'Emily & Christopher',
     subTitle: 'Garden Romance',
-    slug: { current: 'emily-christopher-wedding' },
+    slug: 'emily-christopher-wedding',
     date: '2023-06-20',
     excerpt:
       'A romantic garden wedding with gorgeous florals and intimate details.',
     coverImage: sampleImage('1520763185298'),
     author: { name: 'Amee Longpre' },
     name: 'Emily & Christopher',
+    content: [],
   },
   {
     _id: 'post-4',
     title: 'Lisa & David',
     subTitle: 'Intimate Elopement',
-    slug: { current: 'lisa-david-elopement' },
+    slug: 'lisa-david-elopement',
     date: '2023-05-10',
     excerpt:
       'An intimate elopement in the mountains with breathtaking views and pure love.',
     coverImage: sampleImage('1459181286763'),
     author: { name: 'Amee Longpre' },
     name: 'Lisa & David',
+    content: [],
   },
   {
     _id: 'post-5',
     title: 'Amanda & Ryan',
     subTitle: 'Rustic Farm Wedding',
-    slug: { current: 'amanda-ryan-farm-wedding' },
+    slug: 'amanda-ryan-farm-wedding',
     date: '2023-04-22',
     excerpt:
       'A rustic farm wedding with charming details and warm, candid moments.',
     coverImage: sampleImage('1519741497674'),
     author: { name: 'Amee Longpre' },
     name: 'Amanda & Ryan',
+    content: [],
   },
   {
     _id: 'post-6',
     title: 'Nicole & James',
     subTitle: 'Modern Urban Wedding',
-    slug: { current: 'nicole-james-urban-wedding' },
+    slug: 'nicole-james-urban-wedding',
     date: '2023-03-18',
     excerpt: 'A sleek, modern wedding in the heart of the city with urban aesthetics.',
     coverImage: sampleImage('1442512917368'),
     author: { name: 'Amee Longpre' },
     name: 'Nicole & James',
+    content: [],
   },
 ]
 
@@ -145,12 +147,13 @@ export const mockSingleStoryWithCover: PostProps & {
   _id: 'post-single-1',
   title: 'Jenna & Jordan',
   subTitle: 'Downtown Victoria Engagement',
-  slug: { current: 'jenna-jordan-engagement' },
+  slug: 'jenna-jordan-engagement',
   date: '2023-08-12',
   excerpt: 'A beautiful engagement session downtown.',
   coverImage: sampleImage('1529156069898'),
   author: { name: 'Amee Longpre' },
   name: 'Jenna & Jordan',
+  content: [],
   body: [
     {
       _type: 'block',
@@ -178,17 +181,18 @@ export const mockSingleStoryNoCover: PostProps & {
   _id: 'post-single-2',
   title: "How to edit using Lightroom's new Artificial Intelligence",
   subTitle: "It's easier than you may think",
-  slug: { current: 'lightroom-ai-editing-tutorial' },
+  slug: 'lightroom-ai-editing-tutorial',
   date: '2023-08-12',
   excerpt: 'Tutorial on editing photos using Lightroom AI.',
   author: { name: 'Amee Longpre' },
   name: 'Lightroom AI Tutorial',
+  content: [],
   body: [
     {
       _type: 'block',
       children: [
         {
-          text: 'Lightroom\'s new AI-powered editing tools have revolutionized the way photographers approach post-processing. These intelligent features can analyze your images and suggest adjustments that work perfectly with your specific photo. In this comprehensive guide, I\'ll walk you through the process of using these tools to enhance your images quickly and efficiently.',
+          text: "Lightroom's new AI-powered editing tools have revolutionized the way photographers approach post-processing. These intelligent features can analyze your images and suggest adjustments that work perfectly with your specific photo. In this comprehensive guide, I'll walk you through the process of using these tools to enhance your images quickly and efficiently.",
         },
       ],
     },

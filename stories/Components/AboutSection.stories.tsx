@@ -13,80 +13,84 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-const mockAboutContent = {
-  imageUrl:
-    'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop',
-  title: 'Hi, I\'m Amee',
-  description:
-    'I realized at a young age that time was fleeting, and since then have sought to document life, so that nothing would be forgotten. There is something so beautiful about being able to transport yourself back to a certain time and place and remember what it was like to be there… how you felt at that exact moment in time. I have been shooting professionally since 2012, and have been incredibly lucky to work with so many awesome clients! I live and work out of Victoria, BC, but am always open to travel!',
-  buttonText: 'Get in Touch',
-  buttonHref: '/contact',
+const mockAboutData = {
+  heading: "Hi, I'm Amee",
+  image: {
+    asset: {
+      url: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=640&h=640&fit=crop',
+    },
+  },
+  content: [
+    {
+      _type: 'block',
+      _key: 'block-1',
+      children: [
+        {
+          _type: 'span',
+          _key: 'span-1',
+          text: 'I realized at a young age that time was fleeting, and since then have sought to document life, so that nothing would be forgotten. There is something so beautiful about being able to transport yourself back to a certain time and place and remember what it was like to be there… how you felt at that exact moment in time.',
+          marks: [],
+        },
+      ],
+      markDefs: [],
+      style: 'normal',
+    },
+  ],
 }
 
 export const Default: Story = {
   args: {
-    aboutImage: mockAboutContent.imageUrl,
-    title: mockAboutContent.title,
-    description: mockAboutContent.description,
-    ctaText: mockAboutContent.buttonText,
-    ctaLink: mockAboutContent.buttonHref,
+    data: mockAboutData,
   },
 }
 
-export const WithoutCTA: Story = {
+export const NoImage: Story = {
   args: {
-    aboutImage: mockAboutContent.imageUrl,
-    title: mockAboutContent.title,
-    description: mockAboutContent.description,
+    data: {
+      heading: mockAboutData.heading,
+      content: mockAboutData.content,
+    },
   },
 }
 
-export const ShortDescription: Story = {
+export const NoContent: Story = {
   args: {
-    aboutImage: mockAboutContent.imageUrl,
-    title: mockAboutContent.title,
-    description: 'I love capturing moments that tell your unique love story.',
-    ctaText: mockAboutContent.buttonText,
-    ctaLink: mockAboutContent.buttonHref,
+    data: {
+      heading: mockAboutData.heading,
+      image: mockAboutData.image,
+    },
   },
 }
 
-export const LongDescription: Story = {
+export const Empty: Story = {
   args: {
-    aboutImage: mockAboutContent.imageUrl,
-    title: mockAboutContent.title,
-    description: mockAboutContent.description,
-    ctaText: mockAboutContent.buttonText,
-    ctaLink: mockAboutContent.buttonHref,
+    data: undefined,
   },
 }
 
 export const Mobile: Story = {
   args: {
-    aboutImage: mockAboutContent.imageUrl,
-    title: mockAboutContent.title,
-    description: mockAboutContent.description,
-    ctaText: mockAboutContent.buttonText,
-    ctaLink: mockAboutContent.buttonHref,
+    data: mockAboutData,
   },
   parameters: {
-    viewport: {
-      defaultViewport: 'mobile',
-    },
+    viewport: { defaultViewport: 'mobile' },
   },
 }
 
 export const Tablet: Story = {
   args: {
-    aboutImage: mockAboutContent.imageUrl,
-    title: mockAboutContent.title,
-    description: mockAboutContent.description,
-    ctaText: mockAboutContent.buttonText,
-    ctaLink: mockAboutContent.buttonHref,
+    data: mockAboutData,
   },
   parameters: {
-    viewport: {
-      defaultViewport: 'tablet',
-    },
+    viewport: { defaultViewport: 'tablet' },
+  },
+}
+
+export const Desktop: Story = {
+  args: {
+    data: mockAboutData,
+  },
+  parameters: {
+    viewport: { defaultViewport: 'desktop' },
   },
 }

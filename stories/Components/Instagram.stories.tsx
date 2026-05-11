@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Instagram } from '@/components/Instagram'
-import { mockHomePageData } from '@/stories/fixtures/home-page'
+import Instagram from '@/components/Instagram'
 
 const meta = {
   title: 'Components/Instagram',
@@ -14,66 +13,22 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: mockHomePageData.instagramPosts,
-  },
-}
-
-export const FewPosts: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: mockHomePageData.instagramPosts.slice(0, 3),
-  },
-}
-
-export const SixPosts: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: mockHomePageData.instagramPosts,
-  },
-}
-
-export const Empty: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: [],
-  },
-}
+export const Default: Story = {}
 
 export const Mobile: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: mockHomePageData.instagramPosts,
-  },
   parameters: {
-    viewport: {
-      defaultViewport: 'mobile',
-    },
+    viewport: { defaultViewport: 'mobile' },
   },
 }
 
 export const Tablet: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: mockHomePageData.instagramPosts,
-  },
   parameters: {
-    viewport: {
-      defaultViewport: 'tablet',
-    },
+    viewport: { defaultViewport: 'tablet' },
   },
 }
 
 export const Desktop: Story = {
-  args: {
-    instagramHandle: '@amee.photo',
-    instagramPosts: mockHomePageData.instagramPosts,
-  },
   parameters: {
-    viewport: {
-      defaultViewport: 'desktop',
-    },
+    viewport: { defaultViewport: 'desktop' },
   },
 }
