@@ -8,6 +8,7 @@ import { urlForImage } from '../../lib/sanity'
 import { storiesQuery } from '../../lib/queries'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
 import { PostProps } from '../../types'
+import { decodeHtml } from '../../utils/decodeHtml'
 
 const StarIcon = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -65,18 +66,18 @@ function StoryThumbnail({ post, imageRight }: StoryThumbnailProps) {
     : null
 
   const textEl = (
-    <div className="bg-white flex-1 p-8 flex flex-col gap-6 items-start justify-center lg:h-[392px]">
+    <div className="bg-white flex-1 p-8 flex flex-col gap-6 items-start justify-center lg:h-[392px] overflow-hidden">
       <div className="flex flex-col gap-2">
         {formattedDate && (
           <p className="font-quincy text-overline text-warm-700 uppercase">{formattedDate}</p>
         )}
-        <h2 className="font-quincy text-h3 text-cool-900">{post.title}</h2>
+        <h2 className="font-quincy text-h3 text-cool-900">{decodeHtml(post.title)}</h2>
         {post.subTitle && (
-          <p className="font-karla text-subheading-md text-warm-700">{post.subTitle}</p>
+          <p className="font-karla text-subheading-md text-warm-700">{decodeHtml(post.subTitle)}</p>
         )}
       </div>
       {post.excerpt && (
-        <p className="font-karla text-body-sm text-[#656665]">{post.excerpt}</p>
+        <p className="font-karla text-body-sm text-[#656665] line-clamp-3">{decodeHtml(post.excerpt)}</p>
       )}
     </div>
   )
