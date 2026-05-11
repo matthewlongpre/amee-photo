@@ -12,12 +12,13 @@
       "name": "storybook",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "storybook"],
-      "port": 6006
+      "port": 6006,
+      "autoPort": true
     },
     {
       "name": "Sanity Studio",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["sanity", "start"],
+      "runtimeArgs": ["sanity", "dev"],
       "port": 3333
     }
   ]

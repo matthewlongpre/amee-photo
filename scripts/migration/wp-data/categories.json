@@ -1,0 +1,1013 @@
+[
+  {
+    "id": 24,
+    "count": 4,
+    "description": "",
+    "link": "https://amee.photo/category/couples/",
+    "name": "Couples",
+    "slug": "couples",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Couples Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/couples/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Couples Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/couples/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/couples/\",\"url\":\"https://amee.photo/category/couples/\",\"name\":\"Couples Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/couples/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/couples/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Couples\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Couples Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/couples/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Couples Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/couples/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/couples/",
+            "url": "https://amee.photo/category/couples/",
+            "name": "Couples Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/couples/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/couples/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Couples"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/24"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=24"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "count": 0,
+    "description": "",
+    "link": "https://amee.photo/category/wedding/elopement/",
+    "name": "Elopement",
+    "slug": "elopement",
+    "taxonomy": "category",
+    "parent": 5,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Elopement Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/wedding/elopement/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Elopement Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/wedding/elopement/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/wedding/elopement/\",\"url\":\"https://amee.photo/category/wedding/elopement/\",\"name\":\"Elopement Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/wedding/elopement/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/wedding/elopement/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Wedding\",\"item\":\"https://amee.photo/category/wedding/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Elopement\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Elopement Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/wedding/elopement/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Elopement Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/wedding/elopement/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/wedding/elopement/",
+            "url": "https://amee.photo/category/wedding/elopement/",
+            "name": "Elopement Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/wedding/elopement/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/wedding/elopement/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Wedding",
+                "item": "https://amee.photo/category/wedding/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Elopement"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/57"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://amee.photo/wp-json/wp/v2/categories/5"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=57"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "count": 5,
+    "description": "",
+    "link": "https://amee.photo/category/engagement/",
+    "name": "Engagement",
+    "slug": "engagement",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Engagement Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/engagement/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Engagement Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/engagement/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/engagement/\",\"url\":\"https://amee.photo/category/engagement/\",\"name\":\"Engagement Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/engagement/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/engagement/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Engagement\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Engagement Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/engagement/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Engagement Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/engagement/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/engagement/",
+            "url": "https://amee.photo/category/engagement/",
+            "name": "Engagement Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/engagement/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/engagement/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Engagement"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/62"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=62"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 105,
+    "count": 2,
+    "description": "",
+    "link": "https://amee.photo/category/wedding/intimate-wedding/",
+    "name": "Intimate Wedding",
+    "slug": "intimate-wedding",
+    "taxonomy": "category",
+    "parent": 5,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Intimate Wedding Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/wedding/intimate-wedding/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Intimate Wedding Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/wedding/intimate-wedding/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/wedding/intimate-wedding/\",\"url\":\"https://amee.photo/category/wedding/intimate-wedding/\",\"name\":\"Intimate Wedding Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/wedding/intimate-wedding/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/wedding/intimate-wedding/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Wedding\",\"item\":\"https://amee.photo/category/wedding/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Intimate Wedding\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Intimate Wedding Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/wedding/intimate-wedding/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Intimate Wedding Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/wedding/intimate-wedding/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/wedding/intimate-wedding/",
+            "url": "https://amee.photo/category/wedding/intimate-wedding/",
+            "name": "Intimate Wedding Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/wedding/intimate-wedding/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/wedding/intimate-wedding/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Wedding",
+                "item": "https://amee.photo/category/wedding/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Intimate Wedding"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/105"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://amee.photo/wp-json/wp/v2/categories/5"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=105"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "count": 0,
+    "description": "",
+    "link": "https://amee.photo/category/portraits/",
+    "name": "Portraits",
+    "slug": "portraits",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Portraits Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/portraits/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Portraits Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/portraits/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/portraits/\",\"url\":\"https://amee.photo/category/portraits/\",\"name\":\"Portraits Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/portraits/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/portraits/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Portraits\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Portraits Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/portraits/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Portraits Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/portraits/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/portraits/",
+            "url": "https://amee.photo/category/portraits/",
+            "name": "Portraits Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/portraits/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/portraits/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Portraits"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/47"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=47"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 0,
+    "description": "",
+    "link": "https://amee.photo/category/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Uncategorized Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/uncategorized/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Uncategorized Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/uncategorized/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/uncategorized/\",\"url\":\"https://amee.photo/category/uncategorized/\",\"name\":\"Uncategorized Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/uncategorized/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/uncategorized/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Uncategorized\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Uncategorized Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/uncategorized/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Uncategorized Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/uncategorized/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/uncategorized/",
+            "url": "https://amee.photo/category/uncategorized/",
+            "name": "Uncategorized Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/uncategorized/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/uncategorized/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Uncategorized"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/1"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "count": 23,
+    "description": "",
+    "link": "https://amee.photo/category/wedding/",
+    "name": "Wedding",
+    "slug": "wedding",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Wedding Archives &#8226; Amee Longpré Photography</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://amee.photo/category/wedding/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Wedding Archives &#8226; Amee Longpré Photography\" />\n<meta property=\"og:url\" content=\"https://amee.photo/category/wedding/\" />\n<meta property=\"og:site_name\" content=\"Amee Longpré Photography\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://amee.photo/category/wedding/\",\"url\":\"https://amee.photo/category/wedding/\",\"name\":\"Wedding Archives &#8226; Amee Longpré Photography\",\"isPartOf\":{\"@id\":\"https://amee.photo/#website\"},\"breadcrumb\":{\"@id\":\"https://amee.photo/category/wedding/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://amee.photo/category/wedding/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://amee.photo/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Wedding\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://amee.photo/#website\",\"url\":\"https://amee.photo/\",\"name\":\"Amee Longpré Photography\",\"description\":\"Wedding and portrait photographer based in Victoria, BC.\",\"publisher\":{\"@id\":\"https://amee.photo/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://amee.photo/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https://amee.photo/#organization\",\"name\":\"Amee Longpré Photography\",\"url\":\"https://amee.photo/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://amee.photo/#/schema/logo/image/\",\"url\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"contentUrl\":\"https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png\",\"width\":3358,\"height\":1065,\"caption\":\"Amee Longpré Photography\"},\"image\":{\"@id\":\"https://amee.photo/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/ameee.photo\",\"https://www.instagram.com/amee.photo\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Wedding Archives &#8226; Amee Longpré Photography",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://amee.photo/category/wedding/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Wedding Archives &#8226; Amee Longpré Photography",
+      "og_url": "https://amee.photo/category/wedding/",
+      "og_site_name": "Amee Longpré Photography",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://amee.photo/category/wedding/",
+            "url": "https://amee.photo/category/wedding/",
+            "name": "Wedding Archives &#8226; Amee Longpré Photography",
+            "isPartOf": {
+              "@id": "https://amee.photo/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://amee.photo/category/wedding/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://amee.photo/category/wedding/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://amee.photo/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Wedding"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://amee.photo/#website",
+            "url": "https://amee.photo/",
+            "name": "Amee Longpré Photography",
+            "description": "Wedding and portrait photographer based in Victoria, BC.",
+            "publisher": {
+              "@id": "https://amee.photo/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://amee.photo/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://amee.photo/#organization",
+            "name": "Amee Longpré Photography",
+            "url": "https://amee.photo/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://amee.photo/#/schema/logo/image/",
+              "url": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "contentUrl": "https://amee.photo/wp-content/uploads/2017/03/an-logo-dark.png",
+              "width": 3358,
+              "height": 1065,
+              "caption": "Amee Longpré Photography"
+            },
+            "image": {
+              "@id": "https://amee.photo/#/schema/logo/image/"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ameee.photo",
+              "https://www.instagram.com/amee.photo"
+            ]
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories/5"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://amee.photo/wp-json/wp/v2/posts?categories=5"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

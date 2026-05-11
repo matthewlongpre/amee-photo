@@ -9,7 +9,9 @@ import { postQuery } from '../../../lib/queries'
 import { getClient } from '../../../lib/sanity.server'
 import { PostQueryResponse } from '../../../types'
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params
+
   if (!params?.slug) {
     notFound()
   }
