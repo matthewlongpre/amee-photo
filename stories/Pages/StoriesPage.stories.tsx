@@ -35,7 +35,7 @@ const StoriesPage = ({ posts }: { posts: any[] }) => (
 
     {/* Featured Story (first item) */}
     {posts.length > 0 && (
-      <SectionContainer bg="warm-50" padding="lg">
+      <SectionContainer bg="warm" padding="lg">
         <div className="bg-white rounded-lg overflow-hidden shadow-lg">
           <div className="aspect-video bg-gray-300 mb-6">
             <img

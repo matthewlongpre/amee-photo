@@ -92,10 +92,10 @@ export default meta
 type Story = StoryObj<typeof PostPreviewMock>
 
 const mockCoverImage = {
-  _type: 'image',
+  _type: 'image' as const,
   asset: {
     _ref: 'image-abc123',
-    _type: 'reference',
+    _type: 'reference' as const,
   },
 }
 

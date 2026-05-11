@@ -142,7 +142,7 @@ export const mockStories: PostProps[] = [
 export const mockSingleStoryWithCover: PostProps & {
   body: Array<{ _type: string; children?: Array<{ text: string }> }>
   vendors?: Vendor[]
-  gallery?: Array<{ asset: { url: string } }>
+  gallery?: { snippet: string }
 } = {
   _id: 'post-single-1',
   title: 'Jenna & Jordan',
@@ -165,18 +165,12 @@ export const mockSingleStoryWithCover: PostProps & {
     },
   ],
   vendors: vendors.slice(0, 5),
-  gallery: [
-    { asset: { url: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1000&h=800&fit=crop' } },
-    { asset: { url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1000&h=800&fit=crop' } },
-    { asset: { url: 'https://images.unsplash.com/photo-1520763185298-1b434c919eba?w=1000&h=800&fit=crop' } },
-    { asset: { url: 'https://images.unsplash.com/photo-1459181286763-c409eac34cea?w=1000&h=800&fit=crop' } },
-  ],
 }
 
 export const mockSingleStoryNoCover: PostProps & {
   body: Array<{ _type: string; children?: Array<{ text: string }> }>
   vendors?: Vendor[]
-  gallery?: Array<{ asset: { url: string } }>
+  gallery?: { snippet: string }
 } = {
   _id: 'post-single-2',
   title: "How to edit using Lightroom's new Artificial Intelligence",
@@ -196,11 +190,5 @@ export const mockSingleStoryNoCover: PostProps & {
         },
       ],
     },
-  ],
-  gallery: [
-    { asset: { url: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1000&h=800&fit=crop' } },
-    { asset: { url: 'https://images.unsplash.com/photo-1516035069371-29a08029fc0b?w=1000&h=800&fit=crop' } },
-    { asset: { url: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1000&h=800&fit=crop' } },
-    { asset: { url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1000&h=800&fit=crop' } },
   ],
 }
