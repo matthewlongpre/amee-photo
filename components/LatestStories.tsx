@@ -39,9 +39,9 @@ export default function LatestStories({ posts }: LatestStoriesProps) {
               />
               {/* Image offset 24px right and down */}
               <div className="absolute left-6 top-6 h-[calc(100%-24px)] w-[calc(100%-24px)]">
-                {post.coverImage && (
+                {post.coverImage && (post.coverImage.asset.url || post.coverImage.asset._ref) && (
                   <Image
-                    src={urlForImage(post.coverImage.asset._ref).width(600).height(600).url()}
+                    src={post.coverImage.asset.url ?? urlForImage(post.coverImage.asset._ref!).width(600).height(600).url()}
                     alt={post.title}
                     fill
                     style={{ objectFit: 'cover' }}

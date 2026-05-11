@@ -39,9 +39,10 @@ export interface EmptyProps {
 }
 
 interface CoverImage {
-  _type: 'image'
+  _type?: 'image'
   asset: {
-    _ref: string
-    _type: 'reference'
+    _ref?: string
+    _type?: 'reference'
+    url?: string
   }
 }

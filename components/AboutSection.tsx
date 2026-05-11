@@ -10,15 +10,14 @@ const imgCircularText = '/images/circular-text.svg'
 interface AboutSectionProps {
   data?: {
     heading?: string
-    image?: { asset: { _ref: string } }
+    image?: { asset: { _ref?: string; url?: string } }
     content?: any[]
   }
 }
 
 export default function AboutSection({ data }: AboutSectionProps) {
-  const imageSrc = data?.image
-    ? urlForImage(data.image.asset._ref).width(640).height(640).url()
-    : null
+  const imageSrc = data?.image?.asset?.url
+    ?? (data?.image?.asset?._ref ? urlForImage(data.image.asset._ref).width(640).height(640).url() : null)
 
   return (
     <section className="bg-warm-50 pb-16 lg:flex lg:items-center lg:justify-center lg:pb-[72px]">
