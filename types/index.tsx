@@ -1,8 +1,8 @@
-import { Block } from 'sanity'
+import { PortableTextBlock } from '@sanity/types'
 
 export interface AuthorProps {
   name: string
-  picture: any
+  picture?: any
 }
 
 export interface Vendor {
@@ -16,12 +16,12 @@ export interface PostProps {
   name: string
   title: string
   subTitle: string
-  coverImage: CoverImage
+  coverImage?: CoverImage
   date: string
   excerpt: string
   author: AuthorProps
   slug: string
-  content: Block[]
+  content: PortableTextBlock[]
   isFeatured?: boolean
   vendors?: Vendor[]
   gallery?: {

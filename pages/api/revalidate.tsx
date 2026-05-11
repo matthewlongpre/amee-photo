@@ -58,8 +58,8 @@ const getQueryForType = (type) => {
 const log = (msg, error?) =>
   console[error ? 'error' : 'log'](`[revalidate] ${msg}`)
 
-async function readBody(readable) {
-  const chunks = []
+async function readBody(readable: AsyncIterable<Buffer | string>) {
+  const chunks: Buffer[] = []
   for await (const chunk of readable) {
     chunks.push(typeof chunk === 'string' ? Buffer.from(chunk) : chunk)
   }
@@ -73,7 +73,7 @@ export default async function revalidate(req, res) {
     !isValidSignature(
       body,
       signature,
-      process.env.SANITY_REVALIDATE_SECRET?.trim()
+      process.env.SANITY_REVALIDATE_SECRET?.trim() ?? ''
     )
   ) {
     const invalidSignature = 'Invalid signature'
