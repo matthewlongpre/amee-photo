@@ -14,9 +14,9 @@ const frameColors = ['#A68F83', '#2D2E2D', '#2D2E2D']
 
 export default function LatestStories({ posts }: LatestStoriesProps) {
   return (
-    <div className="bg-white px-16 py-[72px]">
+    <div className="bg-white px-4 py-12 sm:px-8 lg:px-16 lg:py-[72px]">
       {/* Title */}
-      <div className="mb-16 flex items-center justify-center gap-8">
+      <div className="mb-12 flex items-center justify-center gap-8 lg:mb-16">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M8 1L10 6H15L11 9L13 15L8 12L3 15L5 9L1 6H6L8 1Z" fill="#A68F83" />
         </svg>
@@ -27,21 +27,21 @@ export default function LatestStories({ posts }: LatestStoriesProps) {
       </div>
 
       {/* Stories Grid */}
-      <div className="mb-16 flex items-start justify-between gap-8">
+      <div className="mb-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:mb-16 lg:grid-cols-3 lg:gap-8">
         {posts.map((post, index) => (
-          <Link key={post.slug} href={`/stories/${post.slug}`} className="flex flex-1 flex-col items-center gap-6">
+          <Link key={post.slug} href={`/stories/${post.slug}`} className="flex flex-col items-center gap-6">
             {/* Offset frame image */}
-            <div className="relative h-[416px] w-full overflow-clip">
+            <div className="relative w-full overflow-clip" style={{ paddingBottom: 'calc(100% + 24px)' }}>
               {/* Border frame at top-left */}
               <div
-                className="absolute left-0 top-0 h-[392px] w-[392px]"
+                className="absolute left-0 top-0 h-[calc(100%-24px)] w-[calc(100%-24px)]"
                 style={{ border: `1px solid ${frameColors[index % frameColors.length]}`, opacity: 0.92 }}
               />
               {/* Image offset 24px right and down */}
-              <div className="absolute left-6 top-6 h-[392px] w-[392px]">
+              <div className="absolute left-6 top-6 h-[calc(100%-24px)] w-[calc(100%-24px)]">
                 {post.coverImage && (post.coverImage.asset.url || post.coverImage.asset._ref) && (
                   <Image
-                    src={post.coverImage.asset.url ?? urlForImage(post.coverImage.asset._ref!).width(392).height(392).url()}
+                    src={post.coverImage.asset.url ?? urlForImage(post.coverImage.asset._ref!).width(600).height(600).url()}
                     alt={post.title}
                     fill
                     style={{ objectFit: 'cover' }}

@@ -37,7 +37,7 @@ export default function Testimonials({ data }: TestimonialsProps) {
     ?? (current.image?.asset?._ref ? urlForImage(current.image.asset._ref).width(640).height(640).url() : null)
 
   return (
-    <div className="overflow-hidden bg-warm-50 py-12 lg:py-20">
+    <div className="relative overflow-hidden bg-warm-50 py-12 lg:py-20">
       {/* Title */}
       <div className="mb-12 flex items-center justify-center gap-8 lg:mb-16">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

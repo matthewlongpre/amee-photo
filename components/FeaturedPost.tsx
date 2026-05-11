@@ -19,7 +19,7 @@ export function FeaturedPost({
 
   return (
     <div
-      className={merge('absolute inset-x-0 top-0 bottom-[10%] transition-opacity duration-500', {
+      className={merge('absolute inset-x-0 top-0 bottom-0 lg:bottom-[10%] transition-opacity duration-500', {
         'invisible opacity-0': !isVisible,
         'opacity-100': isVisible,
       })}
