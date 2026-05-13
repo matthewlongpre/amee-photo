@@ -66,7 +66,7 @@ function StoryThumbnail({ post, imageRight }: StoryThumbnailProps) {
     : null
 
   const textEl = (
-    <div className="bg-white flex-1 p-8 flex flex-col gap-6 items-start justify-center lg:h-[392px] overflow-hidden">
+    <div className="bg-white flex-1 p-8 flex flex-col gap-6 items-start justify-center lg:h-[392px]">
       <div className="flex flex-col gap-2">
         {formattedDate && (
           <p className="font-quincy text-overline text-warm-700 uppercase">{formattedDate}</p>
