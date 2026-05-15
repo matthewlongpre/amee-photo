@@ -36,6 +36,9 @@ yarn-error.log*
 # Sanity generated runtime
 .sanity/
 
+# Claude Code worktrees (local tool — must never be committed as submodules)
+.claude/worktrees/
+
 # Env files created by scripts for working locally
 .env
 studio/.env.development
