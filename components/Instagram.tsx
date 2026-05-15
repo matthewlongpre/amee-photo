@@ -1,15 +1,32 @@
-'use client'
+interface InstagramMedia {
+  id: string
+  media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM'
+  media_url: string
+  thumbnail_url?: string
+  permalink: string
+}
 
-const images = [
-  '/images/instagram-1.png',
-  '/images/instagram-2.png',
-  '/images/instagram-3.png',
-  '/images/instagram-4.png',
-  '/images/instagram-2.png',
-  '/images/instagram-3.png',
-]
+async function fetchInstagramPosts(): Promise<InstagramMedia[]> {
+  const token = process.env.INSTAGRAM_ACCESS_TOKEN
+  const userId = process.env.INSTAGRAM_USER_ID
+  if (!token || !userId) return []
 
-export default function Instagram() {
+  try {
+    const res = await fetch(
+      `https://graph.instagram.com/v21.0/${userId}/media?fields=id,media_type,media_url,thumbnail_url,permalink&limit=6&access_token=${token}`,
+      { next: { revalidate: 3600 } }
+    )
+    if (!res.ok) return []
+    const data = await res.json()
+    return data.data ?? []
+  } catch {
+    return []
+  }
+}
+
+export default async function Instagram() {
+  const posts = await fetchInstagramPosts()
+
   return (
     <div className="bg-white px-4 py-12 sm:px-8 lg:px-16 lg:py-20">
       {/* Title */}
@@ -27,17 +44,29 @@ export default function Instagram() {
       </div>
 
       {/* Instagram Grid */}
-      <div className="mx-auto grid max-w-5xl grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6 lg:gap-8">
-        {images.map((image, index) => (
-          <div key={index} className="aspect-square w-full overflow-hidden">
-            <img
-              src={image}
-              alt={`Instagram post ${index + 1}`}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
+      {posts.length > 0 && (
+        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6 lg:gap-8">
+          {posts.map((post, index) => {
+            const src = post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url
+            if (!src) return null
+            return (
+              <a
+                key={post.id}
+                href={post.permalink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-square w-full overflow-hidden block"
+              >
+                <img
+                  src={src}
+                  alt={`Instagram post ${index + 1}`}
+                  className="h-full w-full object-cover transition-opacity hover:opacity-90"
+                />
+              </a>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }
