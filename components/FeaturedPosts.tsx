@@ -59,16 +59,15 @@ export function FeaturedPosts({ posts }: FeaturedPostsProps) {
         <nav className="flex gap-10">
           {/* Info with dropdown */}
           <div className="group relative">
-            <a href="#info" className="font-quincy text-overline text-warm-100 border-b border-warm-100 pb-1">Info</a>
+            <a href="/investment" className="font-quincy text-overline text-warm-100 border-b border-warm-100 pb-1">Info</a>
             {/* Invisible bridge keeps hover active as mouse moves into dropdown */}
             <div className="absolute -bottom-3 left-0 h-3 w-full" />
             <div className="pointer-events-none absolute left-1/2 top-full mt-3 -translate-x-1/2 flex flex-col items-center bg-white opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100">
-              <a href="#investment" className="w-full border-b border-warm-100 px-8 py-3 text-center font-quincy text-[14px] font-normal text-cool-900 whitespace-nowrap hover:text-warm-600">Investment</a>
-              <a href="#testimonials" className="w-full border-b border-warm-100 px-8 py-3 text-center font-quincy text-[14px] font-normal text-cool-900 whitespace-nowrap hover:text-warm-600">Testimonials</a>
-              <a href="#faq" className="w-full border-b border-warm-100 px-8 py-3 text-center font-quincy text-[14px] font-normal text-cool-900 whitespace-nowrap hover:text-warm-600">FAQ</a>
+              <a href="/investment" className="w-full border-b border-warm-100 px-8 py-3 text-center font-quincy text-[14px] font-normal text-cool-900 whitespace-nowrap hover:text-warm-600">Investment</a>
+              <a href="/testimonials" className="w-full px-8 py-3 text-center font-quincy text-[14px] font-normal text-cool-900 whitespace-nowrap hover:text-warm-600">Testimonials</a>
             </div>
           </div>
-          <a href="#contact" className="font-quincy text-overline text-warm-100 border-b border-warm-100 pb-1">Contact</a>
+          <a href="/contact" className="font-quincy text-overline text-warm-100 border-b border-warm-100 pb-1">Contact</a>
         </nav>
       </div>
 
@@ -96,12 +95,11 @@ export function FeaturedPosts({ posts }: FeaturedPostsProps) {
           <div className="flex flex-col items-center gap-4">
             <span className="font-quincy text-h2 text-warm-100">Info</span>
             <div className="flex flex-col items-center gap-3">
-              <a href="#investment" className="font-quincy text-overline text-warm-600 border-b border-warm-700 pb-1" onClick={() => setMobileMenuOpen(false)}>Investment</a>
-              <a href="#testimonials" className="font-quincy text-overline text-warm-600 border-b border-warm-700 pb-1" onClick={() => setMobileMenuOpen(false)}>Testimonials</a>
-              <a href="#faq" className="font-quincy text-overline text-warm-600 border-b border-warm-700 pb-1" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
+              <a href="/investment" className="font-quincy text-overline text-warm-600 border-b border-warm-700 pb-1" onClick={() => setMobileMenuOpen(false)}>Investment</a>
+              <a href="/testimonials" className="font-quincy text-overline text-warm-600 border-b border-warm-700 pb-1" onClick={() => setMobileMenuOpen(false)}>Testimonials</a>
             </div>
           </div>
-          <a href="#contact" className="font-quincy text-h2 text-warm-100" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+          <a href="/contact" className="font-quincy text-h2 text-warm-100" onClick={() => setMobileMenuOpen(false)}>Contact</a>
         </nav>
       </div>
 

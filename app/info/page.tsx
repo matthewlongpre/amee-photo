@@ -1,9 +1,5 @@
-import Container from '../../components/container'
+import { redirect } from 'next/navigation'
 
 export default function Info() {
-  return (
-    <section>
-      <Container>Info</Container>
-    </section>
-  )
+  redirect('/investment')
 }

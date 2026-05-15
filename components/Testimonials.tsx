@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { PortableText } from '@portabletext/react'
 
 import { urlForImage } from '../lib/sanity'
@@ -18,9 +19,10 @@ interface TestimonialsProps {
     heading?: string
     testimonials?: Testimonial[]
   }
+  hideCta?: boolean
 }
 
-export default function Testimonials({ data }: TestimonialsProps) {
+export default function Testimonials({ data, hideCta = false }: TestimonialsProps) {
   const testimonials = data?.testimonials ?? []
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -161,11 +163,16 @@ export default function Testimonials({ data }: TestimonialsProps) {
         </div>
       </div>
 
-      <div className="mt-10 flex justify-center lg:mt-16">
-        <button className="bg-cool-900 px-6 py-4 font-karla text-button text-white uppercase hover:opacity-90">
-          See More Testimonials
-        </button>
-      </div>
+      {!hideCta && (
+        <div className="mt-10 flex justify-center lg:mt-16">
+          <Link
+            href="/testimonials"
+            className="bg-cool-900 px-6 py-4 font-karla text-button text-white uppercase hover:opacity-90"
+          >
+            See More Testimonials
+          </Link>
+        </div>
+      )}
     </div>
   )
 }

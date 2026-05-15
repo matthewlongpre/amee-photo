@@ -73,3 +73,11 @@ export const postBySlugQuery = groq`
   ${postFields}
 }
 `
+
+export const testimonialsQuery = groq`
+*[_type == "testimonial"] | order(_createdAt asc) {
+  _id,
+  title,
+  image,
+  content
+}`
