@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import Footer from '../../components/Footer'
 import Instagram from '../../components/Instagram'
-import { Logo } from '../../components/logo'
+import SiteNav from '../../components/SiteNav'
 import { urlForImage } from '../../lib/sanity'
 import { storiesQuery } from '../../lib/queries'
 import { getClient, overlayDrafts } from '../../lib/sanity.server'
@@ -110,43 +110,7 @@ export default async function Page() {
 
   return (
     <main className="w-full">
-      {/* White hero with floating nav */}
-      <div className="relative bg-white h-36">
-        <div className="absolute left-1/2 top-10 -translate-x-1/2 flex items-center gap-10 z-10">
-          <nav className="hidden lg:flex gap-10">
-            <Link
-              href="/#welcome"
-              className="font-quincy text-overline text-[#656665] border-b border-[#b9bebc] pb-px uppercase tracking-[2.4px] whitespace-nowrap"
-            >
-              Welcome
-            </Link>
-            <Link
-              href="/stories"
-              className="font-quincy text-overline text-[#656665] border-b border-[#b9bebc] pb-px uppercase tracking-[2.4px] whitespace-nowrap"
-            >
-              Stories
-            </Link>
-          </nav>
-          <Link href="/" className="h-16 w-16 shrink-0">
-            <Logo className="h-full w-full" />
-          </Link>
-          <nav className="hidden lg:flex gap-10">
-            <Link
-              href="/#info"
-              className="font-quincy text-overline text-[#656665] border-b border-[#b9bebc] pb-px uppercase tracking-[2.4px] whitespace-nowrap"
-            >
-              Info
-            </Link>
-            <Link
-              href="/#contact"
-              className="font-quincy text-overline text-[#656665] border-b border-[#b9bebc] pb-px uppercase tracking-[2.4px] whitespace-nowrap"
-            >
-              Contact
-            </Link>
-          </nav>
-          {/* Mobile: just the logo is visible, centred via the translate */}
-        </div>
-      </div>
+      <SiteNav />
 
       {/* Main content */}
       <div className="bg-warm-50 px-4 py-20 lg:px-16 flex flex-col items-center gap-16">
