@@ -41,7 +41,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
 
   const hasCover = !!post.coverImage?.asset?._ref
   const coverUrl = hasCover
-    ? urlForImage(post.coverImage!.asset._ref).height(1600).width(2400).url()
+    ? urlForImage(post.coverImage!.asset._ref).height(1440).width(2880).url()
     : null
 
   return (
@@ -50,7 +50,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
 
       {/* Cover image hero */}
       {coverUrl && (
-        <div className="relative h-[560px] w-full lg:h-[800px]">
+        <div className="relative h-[560px] w-full lg:h-[720px]">
           <Image
             src={coverUrl}
             alt={`Cover image for ${post.title}`}
@@ -63,30 +63,34 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
         </div>
       )}
 
-      {/* Content */}
-      <div className="mx-auto max-w-3xl px-6 py-16 lg:py-24">
-        {/* Header */}
-        <div className="mb-10">
-          <p className="font-quincy text-overline uppercase tracking-[2.4px] text-warm-600 mb-3">
+      {/* Content card — overlaps bottom of hero on desktop */}
+      <div className={`relative z-10 mx-auto max-w-[864px] bg-white px-10 py-10${hasCover ? ' -mt-24 lg:-mt-[216px]' : ''}`}>
+
+        {/* Title — centered */}
+        <div className="flex flex-col items-center gap-4 text-center mb-10">
+          <p className="font-quincy text-overline uppercase tracking-[2.4px] text-warm-700">
             <FormattedDate date={post.date} />
           </p>
-          <h1 className="font-quincy text-h1 text-cool-900 mb-4">
+          <h1 className="font-quincy text-[48px] leading-[56px] font-normal text-cool-900">
             {decodeHtml(post.title)}
           </h1>
           {post.subTitle && (
-            <p className="font-karla text-h3 text-warm-600">{decodeHtml(post.subTitle)}</p>
+            <p className="font-karla text-[18px] leading-6 font-medium text-warm-700">
+              {decodeHtml(post.subTitle)}
+            </p>
           )}
-          <hr className="mt-8 border-warm-100" />
         </div>
 
-        {/* Body */}
-        <PostBody className="" content={post.content} />
+        <hr className="border-warm-100 mb-10" />
 
-        {/* Vendors */}
-        <Vendors vendors={post.vendors} />
+        {/* Body + vendor sidebar */}
+        <div className="flex flex-col lg:flex-row gap-8">
+          <PostBody className="flex-1 min-w-0" content={post.content} />
+          <Vendors vendors={post.vendors} />
+        </div>
       </div>
 
-      {/* Gallery */}
+      {/* Pictime gallery */}
       {post.gallery?.snippet && <Pictime snippet={post.gallery.snippet} />}
 
       <Footer />
