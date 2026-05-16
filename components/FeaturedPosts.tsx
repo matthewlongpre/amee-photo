@@ -114,7 +114,7 @@ export function FeaturedPosts({ posts }: FeaturedPostsProps) {
             isVisible={index === currentIndex}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(34,34,34,0.5)] via-transparent to-transparent" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[rgba(34,34,34,0.5)] via-transparent to-transparent" />
 
         {/* Desktop nav box — overlaps bottom of image */}
         <div className="absolute left-1/2 top-[640px] hidden w-[864px] -translate-x-1/2 bg-white px-10 py-6 lg:block">
