@@ -9,6 +9,8 @@ module.exports = {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
       { hostname: 'source.unsplash.com' },
+      { hostname: '*.cdninstagram.com' },
+      { hostname: 'graph.instagram.com' },
     ],
   },
   async redirects() {
