@@ -17,6 +17,7 @@ export function FeaturedPosts({ posts }: FeaturedPostsProps) {
   if (!posts.length) return null
 
   const currentPost = posts[currentIndex]
+  const displayTitle = currentPost.title.split(/\s[–—]\s/)[0]
 
   const goToPrevious = () =>
     setCurrentIndex((currentIndex - 1 + posts.length) % posts.length)
@@ -129,7 +130,7 @@ export function FeaturedPosts({ posts }: FeaturedPostsProps) {
             </button>
             <div className="flex flex-col items-center gap-2">
               <p className="font-quincy text-overline text-warm-600">Featured Work</p>
-              <p className="font-quincy text-h3 text-cool-900">{currentPost.title}</p>
+              <p className="font-quincy text-h3 text-cool-900">{displayTitle}</p>
               <p className="font-karla text-subheading-sm text-warm-600">{currentPost.subTitle}</p>
             </div>
             <button
@@ -159,7 +160,7 @@ export function FeaturedPosts({ posts }: FeaturedPostsProps) {
           </button>
           <div className="flex flex-col items-center gap-1 px-4 text-center">
             <p className="font-quincy text-overline text-warm-600">Featured Work</p>
-            <p className="font-quincy text-h3 text-cool-900">{currentPost.title}</p>
+            <p className="font-quincy text-h3 text-cool-900">{displayTitle}</p>
             {currentPost.subTitle && (
               <p className="font-karla text-subheading-sm text-warm-600">{currentPost.subTitle}</p>
             )}
