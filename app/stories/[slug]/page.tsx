@@ -80,7 +80,7 @@ export default async function Page(props: { params: Promise<{ slug: string }> })
         </div>
 
         {/* Body */}
-        <PostBody content={post.content} />
+        <PostBody className="" content={post.content} />
 
         {/* Vendors */}
         <Vendors vendors={post.vendors} />
