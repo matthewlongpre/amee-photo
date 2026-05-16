@@ -16,24 +16,27 @@ export default function Vendors({ className, vendors = [] }: VendorsProps) {
 
   return (
     <div className={className}>
-      <h2 className="mb-4 text-2xl font-bold">Vendors</h2>
-      <div className="flex flex-col gap-4">
+      <hr className="mb-8 border-warm-100" />
+      <h3 className="font-quincy text-overline uppercase tracking-[2.4px] text-warm-600 mb-6">
+        Vendors
+      </h3>
+      <div className="grid grid-cols-2 gap-x-8 gap-y-4">
         {vendors.map((vendor, index) => (
-          <div key={index} className="flex items-start text-sm">
-            <span className="min-w-[100px] font-semibold">
-              {vendor.category}:
-            </span>
+          <div key={index}>
+            <p className="font-quincy text-overline uppercase tracking-[2.4px] text-warm-600">
+              {vendor.category}
+            </p>
             {vendor.url ? (
               <Link
                 href={vendor.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="font-karla text-body-sm text-cool-900 hover:text-warm-600 transition-colors"
               >
                 {vendor.name}
               </Link>
             ) : (
-              <span>{vendor.name}</span>
+              <p className="font-karla text-body-sm text-cool-900">{vendor.name}</p>
             )}
           </div>
         ))}
