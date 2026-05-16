@@ -1,0 +1,57 @@
+name: Refresh Instagram Token
+
+on:
+  schedule:
+    - cron: '0 9 1 * *' # 9am UTC on the 1st of every month
+  workflow_dispatch: # allow manual trigger from GitHub Actions UI
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli --silent
+
+      - name: Read current token from Netlify
+        id: get
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          token=$(netlify env:get INSTAGRAM_ACCESS_TOKEN)
+          if [ -z "$token" ]; then
+            echo "Could not read INSTAGRAM_ACCESS_TOKEN from Netlify" && exit 1
+          fi
+          echo "::add-mask::$token"
+          echo "token=$token" >> $GITHUB_OUTPUT
+
+      - name: Refresh via Instagram Graph API
+        id: refresh
+        run: |
+          response=$(curl -sf \
+            "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${{ steps.get.outputs.token }}")
+          new_token=$(echo "$response" | jq -r '.access_token // empty')
+          expires=$(echo "$response" | jq -r '.expires_in // 0')
+          if [ -z "$new_token" ]; then
+            echo "Token refresh failed: $response" && exit 1
+          fi
+          echo "::add-mask::$new_token"
+          echo "new_token=$new_token" >> $GITHUB_OUTPUT
+          echo "Token refreshed — expires in $((expires / 86400)) days"
+
+      - name: Write new token back to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          netlify env:set INSTAGRAM_ACCESS_TOKEN "${{ steps.refresh.outputs.new_token }}"
+
+      - name: Trigger Netlify rebuild
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+            "https://api.netlify.com/api/v1/sites/$NETLIFY_SITE_ID/builds"
+          echo "Netlify rebuild triggered"
