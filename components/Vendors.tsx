@@ -15,29 +15,29 @@ export default function Vendors({ className, vendors = [] }: VendorsProps) {
   if (!vendors?.length) return null
 
   return (
-    <div className={className}>
-      <h2 className="mb-4 text-2xl font-bold">Vendors</h2>
-      <div className="flex flex-col gap-4">
-        {vendors.map((vendor, index) => (
-          <div key={index} className="flex items-start text-sm">
-            <span className="min-w-[100px] font-semibold">
-              {vendor.category}:
-            </span>
-            {vendor.url ? (
-              <Link
-                href={vendor.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                {vendor.name}
-              </Link>
-            ) : (
-              <span>{vendor.name}</span>
-            )}
-          </div>
-        ))}
-      </div>
+    <div className={`bg-warm-100 p-6 flex flex-col items-center gap-2 shrink-0 lg:w-[328px] ${className ?? ''}`}>
+      <p className="font-quincy text-overline uppercase tracking-[2.4px] text-warm-700 mb-2">
+        Vendors
+      </p>
+      {vendors.map((vendor, index) => (
+        <div key={index} className="flex flex-col items-center text-center">
+          <p className="font-quincy text-overline uppercase tracking-[2.4px] text-warm-600">
+            {vendor.category}
+          </p>
+          {vendor.url ? (
+            <Link
+              href={vendor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-karla text-body-sm text-cool-900 hover:text-warm-600 transition-colors"
+            >
+              {vendor.name}
+            </Link>
+          ) : (
+            <p className="font-karla text-body-sm text-cool-900">{vendor.name}</p>
+          )}
+        </div>
+      ))}
     </div>
   )
 }

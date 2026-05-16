@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { urlForImage } from '../lib/sanity'
 import { PostProps } from '../types'
@@ -18,7 +19,8 @@ export function FeaturedPost({
   const { title, coverImage } = post
 
   return (
-    <div
+    <Link
+      href={`/stories/${post.slug}`}
       className={merge('absolute inset-x-0 top-0 bottom-0 lg:bottom-[10%] transition-opacity duration-500', {
         'invisible opacity-0': !isVisible,
         'opacity-100': isVisible,
@@ -34,6 +36,6 @@ export function FeaturedPost({
           style={{ objectFit: 'cover' }}
         />
       )}
-    </div>
+    </Link>
   )
 }
